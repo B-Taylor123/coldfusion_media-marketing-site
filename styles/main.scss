@@ -1,10 +1,10 @@
+@import './varibles';
+
 html {
-    width: 100%;
-    height: 100%;
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
-    background-color: #f1f1f1;
-    color: #353535;
+    background-color: $main-bg-colour;
+    color: $font-colour;
     box-sizing: border-box;
 }
 
@@ -14,9 +14,9 @@ html {
     box-sizing: inherit;
 }
 
-body {
-    width: 100%;
-    height: 100%;
+main {
+    width: calc(100vw - 23px);
+    height: 100vh;
     display: flex;
     flex-direction: row;
 }
@@ -24,27 +24,71 @@ body {
 .wrapper {
     width: 50%;
     height: 100%;
+    padding: 2%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.main--text-wrapper {
+    align-items: flex-start;
+    h1 {
+        font-size: 5rem;
+        font-weight: bold;
+        text-align: left;
+        max-width: 95%;
+    }
+
+    p {
+        font-size: 2rem;
+        text-align: left;
+        max-width: 95%;
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    button {
+        width: 300px;
+        height: 60px;
+        font-size: 1.2rem;
+        background-color: $brand-blue;
+        color: $font-colour-light;
+        border: none;
+        border-radius: 1000px;
+    }
+}
+
+.main--ilustration-wrapper {
     align-items: center;
+    img {
+        width: 80%;
+    }
 }
 
-.text-wrapper h1 {
-    font-size: 6rem;
-    font-weight: bold;
-    text-align: center;
-    max-width: 95%;
-}
-
-.text-wrapper p {
-    font-size: 3rem;
-    text-align: center;
-    max-width: 95%;
-}
-
-.ilustration-wrapper img {
-    width: 80%;
+footer {
+    height: 60px;
+    width: 100%;
+    padding-left: 2%;
+    padding-right: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $secondary-bg-colour;
+    .footer--social-icons {
+        width: 150px;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        .footer--social-icon {
+            width: 40px;
+            height: 40px;
+            background-color: #C4C4C4;
+            border-radius: 1000px;
+        }
+    }
 }
 
 @media only screen 
