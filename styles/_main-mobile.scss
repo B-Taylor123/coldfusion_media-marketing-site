@@ -1,0 +1,24 @@
+@media only screen 
+    /* and (min-device-width: 375px)  */
+    and (max-device-width: 667px) 
+    and (-webkit-min-device-pixel-ratio: 2) {
+    html {
+        font-size: 8px;
+    }
+
+    body {
+        display: initial;
+    }
+
+    .wrapper {
+        width: 100%;
+    }
+
+    .text-wrapper h1 {
+        font-size: 5rem;
+    }
+
+    .ilustration-wrapper {
+        display: none;
+    }
+}

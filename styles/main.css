@@ -1,7 +1,38 @@
+@media only screen and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  html {
+    font-size: 8px;
+  }
+  body {
+    display: initial;
+  }
+  .wrapper {
+    width: 100%;
+  }
+  .text-wrapper h1 {
+    font-size: 5rem;
+  }
+  .ilustration-wrapper {
+    display: none;
+  }
+}
+
+@media only screen and (max-device-width: 1024px) {
+  /* and (-webkit-min-device-pixel-ratio: 1) { */
+  body {
+    display: initial;
+  }
+  .wrapper {
+    width: 100%;
+  }
+  .ilustration-wrapper {
+    display: none;
+  }
+}
+
 html {
   font-size: 16px;
   font-family: 'Roboto', sans-serif;
-  background-color: #E5E5E5;
+  background-color: #1A1A1A;
   color: #353535;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -26,8 +57,8 @@ main {
           flex-direction: row;
 }
 
-.wrapper {
-  width: 50%;
+.main--hero {
+  width: 100%;
   height: 100%;
   padding: 2%;
   display: -webkit-box;
@@ -40,37 +71,23 @@ main {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.main--text-wrapper {
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-}
-
-.main--text-wrapper h1 {
+.main--hero h1 {
   font-size: 5rem;
   font-weight: bold;
-  text-align: left;
-  max-width: 95%;
+  text-align: center;
 }
 
-.main--text-wrapper p {
+.main--hero p {
   font-size: 2rem;
-  text-align: left;
+  text-align: center;
   max-width: 95%;
   margin-top: 60px;
   margin-bottom: 60px;
-}
-
-.main--text-wrapper button {
-  width: 300px;
-  height: 60px;
-  font-size: 1.2rem;
-  background-color: #397FCB;
-  color: #FAFAFA;
-  border: none;
-  border-radius: 1000px;
 }
 
 .main--ilustration-wrapper {
@@ -127,36 +144,5 @@ footer .footer--social-icons .footer--social-icon {
   height: 40px;
   background-color: #C4C4C4;
   border-radius: 1000px;
-}
-
-@media only screen and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
-  html {
-    font-size: 8px;
-  }
-  body {
-    display: initial;
-  }
-  .wrapper {
-    width: 100%;
-  }
-  .text-wrapper h1 {
-    font-size: 5rem;
-  }
-  .ilustration-wrapper {
-    display: none;
-  }
-}
-
-@media only screen and (max-device-width: 1024px) {
-  /* and (-webkit-min-device-pixel-ratio: 1) { */
-  body {
-    display: initial;
-  }
-  .wrapper {
-    width: 100%;
-  }
-  .ilustration-wrapper {
-    display: none;
-  }
 }
 /*# sourceMappingURL=main.css.map */
