@@ -31,19 +31,20 @@ main {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    .main--hero-text {
+        h1 {
+            font-size: 5rem;
+            font-weight: bold;
+            text-align: center;
+        }
 
-    h1 {
-        font-size: 5rem;
-        font-weight: bold;
-        text-align: center;
-    }
-
-    p {
-        font-size: 2rem;
-        text-align: center;
-        max-width: 95%;
-        margin-top: 60px;
-        margin-bottom: 60px;
+        p {
+            font-size: 2rem;
+            text-align: center;
+            max-width: 95%;
+            margin-top: 60px;
+            margin-bottom: 60px;
+        }
     }
 }
 
@@ -64,6 +65,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     background-color: $secondary-bg-colour;
+    color: $font-colour-dark;
     .footer--social-icons {
         width: 150px;
         height: 100%;
