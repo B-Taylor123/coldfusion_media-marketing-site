@@ -1,6 +1,6 @@
-@import './variables';
-@import './main-mobile';
-@import './main-tablet';
+@import '../variables/variables';
+@import './partials/main-mobile';
+@import './partials/main-tablet';
 
 html {
     font-size: 16px;
@@ -51,7 +51,7 @@ header {
 }
 
 main {
-    width: calc(100vw - 23px);
+    width: calc(100vw - 17px);
     display: flex;
     flex-direction: column;
 }
@@ -79,7 +79,7 @@ main {
             margin-bottom: 60px;
         }
     }
-    #home-scroll-indicator-wrapper {
+    .main--scroll-indicator-wrapper {
         position: absolute;
         bottom: 1rem;
         left: 50%;
@@ -126,6 +126,64 @@ main {
     .main--contact-form {
         width: 49%;
         height: 100%;
+        padding: 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: $font-size-m;
+        .form-bg {
+            border-radius: 10px;
+            background-color: #101010;
+            padding-top: .75rem;
+            padding-bottom: .75rem;
+            &.clickable {
+                cursor: pointer;
+                &:hover {
+                    background-color: #050505;
+                }
+            }
+        }
+        .code-line {
+            width: auto;
+            height: 2rem;
+            padding: .25rem;
+
+            $code-colour-comment: #58616D;
+            $code-colour-keyword: #C274D4;
+            $code-colour-variable: #E5C07B;
+            $code-colour-function-name: #61AFEF;
+            $code-colour-function-other: #ABB1B3;
+            $code-colour-key: #E06C75;
+            $code-colour-text: #98C379;
+
+            &.comment {
+                color: $code-colour-comment;
+            }
+            &.indent1 {
+                padding-left: 2.5%;
+            }
+            &.indent2 {
+                padding-left: 5%;
+            }
+            .keyword {
+                color: $code-colour-keyword;
+            }
+            .variable {
+                color: $code-colour-variable;
+            }
+            .function-name {
+                color: $code-colour-function-name;
+            }
+            .function-other {
+                color: $code-colour-function-other;
+            }
+            .key {
+                color: $code-colour-key;
+            }
+            .text {
+                color: $code-colour-text;
+            }
+        }
     }
     .main--contact-divider {
         width: 2px;
@@ -135,6 +193,9 @@ main {
     .main--contact-animation {
         width: 49%;
         height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 

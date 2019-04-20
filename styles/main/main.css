@@ -36,6 +36,7 @@ html {
   color: #DEDEDE;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  --view-width: calc(100vh - 22px);
 }
 
 *,
@@ -100,7 +101,7 @@ header .header--menu .header--menu-item {
 }
 
 main {
-  width: calc(100vw - 23px);
+  width: calc(100vw - 17px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -143,7 +144,7 @@ main {
   margin-bottom: 60px;
 }
 
-.main--hero #home-scroll-indicator-wrapper {
+.main--hero .main--scroll-indicator-wrapper {
   position: absolute;
   bottom: 1rem;
   left: 50%;
@@ -151,13 +152,13 @@ main {
           transform: translateX(-50%);
 }
 
-.main--hero #home-scroll-indicator-wrapper .mouse {
+.main--hero .main--scroll-indicator-wrapper .mouse {
   max-width: 2.5rem;
   width: 100%;
   height: auto;
 }
 
-.main--hero #home-scroll-indicator-wrapper .mouse .scroll {
+.main--hero .main--scroll-indicator-wrapper .mouse .scroll {
   -webkit-animation-name: scroll;
           animation-name: scroll;
   -webkit-animation-duration: 1.5s;
@@ -223,6 +224,75 @@ main {
 .main--contact .main--contact-form {
   width: 49%;
   height: 100%;
+  padding: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.5rem;
+}
+
+.main--contact .main--contact-form .form-bg {
+  border-radius: 10px;
+  background-color: #101010;
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+}
+
+.main--contact .main--contact-form .form-bg.clickable {
+  cursor: pointer;
+}
+
+.main--contact .main--contact-form .form-bg.clickable:hover {
+  background-color: #050505;
+}
+
+.main--contact .main--contact-form .code-line {
+  width: auto;
+  height: 2rem;
+  padding: .25rem;
+}
+
+.main--contact .main--contact-form .code-line.comment {
+  color: #58616D;
+}
+
+.main--contact .main--contact-form .code-line.indent1 {
+  padding-left: 2.5%;
+}
+
+.main--contact .main--contact-form .code-line.indent2 {
+  padding-left: 5%;
+}
+
+.main--contact .main--contact-form .code-line .keyword {
+  color: #C274D4;
+}
+
+.main--contact .main--contact-form .code-line .variable {
+  color: #E5C07B;
+}
+
+.main--contact .main--contact-form .code-line .function-name {
+  color: #61AFEF;
+}
+
+.main--contact .main--contact-form .code-line .function-other {
+  color: #ABB1B3;
+}
+
+.main--contact .main--contact-form .code-line .key {
+  color: #E06C75;
+}
+
+.main--contact .main--contact-form .code-line .text {
+  color: #98C379;
 }
 
 .main--contact .main--contact-divider {
@@ -234,6 +304,15 @@ main {
 .main--contact .main--contact-animation {
   width: 49%;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 footer {

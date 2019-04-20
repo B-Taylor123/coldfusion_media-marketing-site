@@ -6,7 +6,7 @@
     <title> Coldfusion Media </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/main/main.css">
 </head>
 <body>
     <header>
@@ -25,7 +25,7 @@
 
                 <p> We’re passionate about crafting digital experiences and tools that both excite and empower the user</p>
             </div>
-            <div id="home-scroll-indicator-wrapper">
+            <div class="main--scroll-indicator-wrapper">
                 <svg class="mouse" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76 130" preserveAspectRatio="xMidYmid meet">
                     <g fill="none" fill-rule="evenodd">
                         <rect width="70" height="118" x="1.5" y="1.5" stroke="#FFF" stroke-width="3" rx="36"/>
@@ -37,21 +37,64 @@
 
         <section class="main--contact">
             <div class="main--contact-form">
-                <span class="code-comment"> // Some comment </span>
-                <span class="code-comment"> // Some other comment </span>
+                <div class="code-line comment"> // Get in touch so we can look at working together to </div>
+                <div class="code-line comment"> // drive what matters to you most </div>
 
-                <span class="code-function"></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
+                <br>
+
+                <div class="code-line function">
+                    <span class="keyword">function</span> <span class="function-name">contactForm</span><span class="function-other">() {</span>
+                </div>
+                    
+                <br>
+
+                <div class="form-bg wide">
+                    <div class="code-line indent1 comment"> // Add your info here </div>
+
+                    <div class="code-line indent1">
+                        <span class="keyword">const</span> <span class="variable">formDetails</span> <span class="function-other">= {</span> 
+                    </div>
+
+                    <div class="code-line indent2">
+                        <span class="key">name:</span> <span class="text">"John Snow"</span><span class="function-other">,</span>
+                    </div>
+
+                    <div class="code-line indent2">
+                        <span class="key">email:</span> <span class="text">"j.snow@example.com"</span><span class="function-other">,</span>
+                    </div>
+
+                    <div class="code-line indent2">
+                        <span class="key">phone:</span> <span class="text">"0777 444777"</span><span class="function-other">,</span>
+                    </div>
+
+                    <div class="code-line indent2">
+                        <span class="key">company:</span> <span class="text">"The Nights Watch"</span>
+                    </div>
+
+                    <div class="code-line indent1">
+                        <span class="function-other">};</span>
+                    </div>
+                </div>
+
+                <br>
+
+                <div class="form-bg clickable">
+                    <div class="code-line indent1">
+                        <span class="function-name">submitForm</span><span class="function-other">(</span><span class="key">formDetails</span><span class="function-other">);</span>
+                    </div>
+                </div>
+
+                <br>
+
+                <div class="code-line">
+                    <span class="function-other">}</span>
+                </div>
             </div>
 
-            <div class="main--contact-divider"/>
+            <div class="main--contact-divider"></div>
 
             <div class="main--contact-animation">
-
+                <div> Placeholder </div>
             </div>
         </section>
     </main>
