@@ -6,7 +6,22 @@
             "type": "npm",
             "script": "start",
             "path": "frontend/",
-            "problemMatcher": []
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            }
+        },
+        {
+            "label": "Run Email Service Dev Tooling",
+            "type": "npm",
+            "script": "start",
+            "path": "api/src/services/email_service",
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            }
         }
     ]
 }

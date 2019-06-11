@@ -344,8 +344,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _base_header_bar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../base/header_bar */ "./components/pages/base/header_bar/index.ts");
 /* harmony import */ var _layout_full_viewport_section__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../layout/full_viewport_section */ "./components/layout/full_viewport_section/index.ts");
 /* harmony import */ var _base_footer__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../base/footer */ "./components/pages/base/footer/index.ts");
-/* harmony import */ var _home_page_cta_home_page_cta__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./home_page_cta/home-page-cta */ "./components/pages/home_page/home_page_cta/home-page-cta.tsx");
+/* harmony import */ var _home_page_cta__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./home_page_cta */ "./components/pages/home_page/home_page_cta/index.ts");
+/* harmony import */ var _home_page_services__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./home_page_services */ "./components/pages/home_page/home_page_services/index.ts");
+/* harmony import */ var _home_page_contact__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./home_page_contact */ "./components/pages/home_page/home_page_contact/index.ts");
 var _jsxFileName = "/home/ben/Projects/ColdFusion_Media/coldfusion_media-marketing-site/frontend/components/pages/home_page/home-page.tsx";
+
+
 
 
 
@@ -360,53 +364,321 @@ var HomePage = function HomePage() {
       height: '100%',
       overflow: 'hidden'
     },
+    universal: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 14
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_base_header_bar__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 15
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_layout_full_viewport_section__WEBPACK_IMPORTED_MODULE_3__["default"], {
     clear: "header",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
+      lineNumber: 17
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_home_page_cta_home_page_cta__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_home_page_cta__WEBPACK_IMPORTED_MODULE_5__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 18
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_layout_full_viewport_section__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_layout_full_viewport_section__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    clear: "footer",
-    __source: {
-      fileName: _jsxFileName,
       lineNumber: 21
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_base_footer__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_home_page_services__WEBPACK_IMPORTED_MODULE_6__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 22
+    },
+    __self: this
+  })), react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_layout_full_viewport_section__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    clear: "footer",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_home_page_contact__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 26
+    },
+    __self: this
+  })), react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_base_footer__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 29
     },
     __self: this
   }));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (HomePage);
+
+/***/ }),
+
+/***/ "./components/pages/home_page/home_page_contact/contact_form/contact-form.tsx":
+/*!************************************************************************************!*\
+  !*** ./components/pages/home_page/home_page_contact/contact_form/contact-form.tsx ***!
+  \************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/slicedToArray */ "./node_modules/@babel/runtime-corejs2/helpers/esm/slicedToArray.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "styled-components");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _form_input_row__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./form_input_row */ "./components/pages/home_page/home_page_contact/contact_form/form_input_row/index.ts");
+/* harmony import */ var _form_input__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./form_input */ "./components/pages/home_page/home_page_contact/contact_form/form_input/index.ts");
+
+var _jsxFileName = "/home/ben/Projects/ColdFusion_Media/coldfusion_media-marketing-site/frontend/components/pages/home_page/home_page_contact/contact_form/contact-form.tsx";
+
+
+ // import { post } from '../../../../../services/http-service';
+
+
+
+
+var ContactForm = function ContactForm() {
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(''),
+      _useState2 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__["default"])(_useState, 2),
+      value1 = _useState2[0],
+      setValue1 = _useState2[1];
+
+  return react__WEBPACK_IMPORTED_MODULE_1__["createElement"](Form, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1__["createElement"](_form_input_row__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1__["createElement"](_form_input__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    type: "text",
+    value: value1,
+    onChange: function onChange(e) {
+      return setValue1(e.currentTarget.value);
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16
+    },
+    __self: this
+  })), react__WEBPACK_IMPORTED_MODULE_1__["createElement"]("button", {
+    onClick: function onClick(e) {
+      return submitClicked(e, value1);
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18
+    },
+    __self: this
+  }, " Submit "));
+}; // post('http://localhost:5000/email/contact', { prop1: e.currentTarget.value });
+
+
+var submitClicked = function submitClicked(e, value1) {
+  e.preventDefault();
+  console.log('submitClicked value1 =', value1);
+};
+
+var Form = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.form.withConfig({
+  displayName: "contact-form__Form",
+  componentId: "e2x83c-0"
+})(["width:33%;height:auto;display:flex;flex-direction:column;justify-content:flex-start;align-items:flex-start;"]);
+/* harmony default export */ __webpack_exports__["default"] = (ContactForm);
+
+/***/ }),
+
+/***/ "./components/pages/home_page/home_page_contact/contact_form/form_input/form-input.tsx":
+/*!*********************************************************************************************!*\
+  !*** ./components/pages/home_page/home_page_contact/contact_form/form_input/form-input.tsx ***!
+  \*********************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/extends */ "./node_modules/@babel/runtime-corejs2/helpers/esm/extends.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "styled-components");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_2__);
+
+var _jsxFileName = "/home/ben/Projects/ColdFusion_Media/coldfusion_media-marketing-site/frontend/components/pages/home_page/home_page_contact/contact_form/form_input/form-input.tsx";
+
+
+
+var FormInput = function FormInput(props) {
+  return react__WEBPACK_IMPORTED_MODULE_1__["createElement"](Input, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, props, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    },
+    __self: this
+  }));
+};
+
+var Input = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.input.withConfig({
+  displayName: "form-input__Input",
+  componentId: "sc-14vvfk9-0"
+})(["width:100%;height:40px;border:1px solid white;background-color:rgba(0,0,0,0);border-radius:4px;color:white;"]);
+/* harmony default export */ __webpack_exports__["default"] = (FormInput);
+
+/***/ }),
+
+/***/ "./components/pages/home_page/home_page_contact/contact_form/form_input/index.ts":
+/*!***************************************************************************************!*\
+  !*** ./components/pages/home_page/home_page_contact/contact_form/form_input/index.ts ***!
+  \***************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _form_input__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./form-input */ "./components/pages/home_page/home_page_contact/contact_form/form_input/form-input.tsx");
+
+/* harmony default export */ __webpack_exports__["default"] = (_form_input__WEBPACK_IMPORTED_MODULE_0__["default"]);
+
+/***/ }),
+
+/***/ "./components/pages/home_page/home_page_contact/contact_form/form_input_row/form-input-row.tsx":
+/*!*****************************************************************************************************!*\
+  !*** ./components/pages/home_page/home_page_contact/contact_form/form_input_row/form-input-row.tsx ***!
+  \*****************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "styled-components");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "/home/ben/Projects/ColdFusion_Media/coldfusion_media-marketing-site/frontend/components/pages/home_page/home_page_contact/contact_form/form_input_row/form-input-row.tsx";
+
+
+
+var FormInputRow = function FormInputRow(props) {
+  return react__WEBPACK_IMPORTED_MODULE_0__["createElement"](Row, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6
+    },
+    __self: this
+  }, props.children);
+};
+
+var Row = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div.withConfig({
+  displayName: "form-input-row__Row",
+  componentId: "sc-1jyevci-0"
+})(["width:100%;height:auto;display:flex;flex-direction:row;"]);
+/* harmony default export */ __webpack_exports__["default"] = (FormInputRow);
+
+/***/ }),
+
+/***/ "./components/pages/home_page/home_page_contact/contact_form/form_input_row/index.ts":
+/*!*******************************************************************************************!*\
+  !*** ./components/pages/home_page/home_page_contact/contact_form/form_input_row/index.ts ***!
+  \*******************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _form_input_row__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./form-input-row */ "./components/pages/home_page/home_page_contact/contact_form/form_input_row/form-input-row.tsx");
+
+/* harmony default export */ __webpack_exports__["default"] = (_form_input_row__WEBPACK_IMPORTED_MODULE_0__["default"]);
+
+/***/ }),
+
+/***/ "./components/pages/home_page/home_page_contact/contact_form/index.ts":
+/*!****************************************************************************!*\
+  !*** ./components/pages/home_page/home_page_contact/contact_form/index.ts ***!
+  \****************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _contact_form__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./contact-form */ "./components/pages/home_page/home_page_contact/contact_form/contact-form.tsx");
+
+/* harmony default export */ __webpack_exports__["default"] = (_contact_form__WEBPACK_IMPORTED_MODULE_0__["default"]);
+
+/***/ }),
+
+/***/ "./components/pages/home_page/home_page_contact/home-page-contact.tsx":
+/*!****************************************************************************!*\
+  !*** ./components/pages/home_page/home_page_contact/home-page-contact.tsx ***!
+  \****************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "styled-components");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _contact_form__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./contact_form */ "./components/pages/home_page/home_page_contact/contact_form/index.ts");
+var _jsxFileName = "/home/ben/Projects/ColdFusion_Media/coldfusion_media-marketing-site/frontend/components/pages/home_page/home_page_contact/home-page-contact.tsx";
+
+
+
+
+var HomePageContact = function HomePageContact() {
+  return react__WEBPACK_IMPORTED_MODULE_0__["createElement"](HomePageContactWrapper, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_contact_form__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
+    },
+    __self: this
+  }));
+};
+
+var HomePageContactWrapper = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div.withConfig({
+  displayName: "home-page-contact__HomePageContactWrapper",
+  componentId: "sc-1q7vqjm-0"
+})(["width:100%;height:100%;display:flex;justify-content:center;align-items:center;"]);
+/* harmony default export */ __webpack_exports__["default"] = (HomePageContact);
+
+/***/ }),
+
+/***/ "./components/pages/home_page/home_page_contact/index.ts":
+/*!***************************************************************!*\
+  !*** ./components/pages/home_page/home_page_contact/index.ts ***!
+  \***************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _home_page_contact__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./home-page-contact */ "./components/pages/home_page/home_page_contact/home-page-contact.tsx");
+
+/* harmony default export */ __webpack_exports__["default"] = (_home_page_contact__WEBPACK_IMPORTED_MODULE_0__["default"]);
 
 /***/ }),
 
@@ -516,10 +788,25 @@ var Hero = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div.withConf
 
 /***/ }),
 
-/***/ "./components/pages/home_page/home_page_cta/scroll_indicator/scroll-indicator.tsx":
-/*!****************************************************************************************!*\
-  !*** ./components/pages/home_page/home_page_cta/scroll_indicator/scroll-indicator.tsx ***!
-  \****************************************************************************************/
+/***/ "./components/pages/home_page/home_page_cta/index.ts":
+/*!***********************************************************!*\
+  !*** ./components/pages/home_page/home_page_cta/index.ts ***!
+  \***********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _home_page_cta__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./home-page-cta */ "./components/pages/home_page/home_page_cta/home-page-cta.tsx");
+
+/* harmony default export */ __webpack_exports__["default"] = (_home_page_cta__WEBPACK_IMPORTED_MODULE_0__["default"]);
+
+/***/ }),
+
+/***/ "./components/pages/home_page/home_page_cta/scroll_indicator/desktop_scroll_indicator/desktop-scroll-indicator.tsx":
+/*!*************************************************************************************************************************!*\
+  !*** ./components/pages/home_page/home_page_cta/scroll_indicator/desktop_scroll_indicator/desktop-scroll-indicator.tsx ***!
+  \*************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -529,24 +816,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "styled-components");
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/home/ben/Projects/ColdFusion_Media/coldfusion_media-marketing-site/frontend/components/pages/home_page/home_page_cta/scroll_indicator/scroll-indicator.tsx";
+var _jsxFileName = "/home/ben/Projects/ColdFusion_Media/coldfusion_media-marketing-site/frontend/components/pages/home_page/home_page_cta/scroll_indicator/desktop_scroll_indicator/desktop-scroll-indicator.tsx";
 
 
 
-var ScrollIndicator = function ScrollIndicator() {
-  return react__WEBPACK_IMPORTED_MODULE_0__["createElement"](ScrollIndicatorWrapper, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 6
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0__["createElement"](Mouse, {
+var DesktopScrollIndicator = function DesktopScrollIndicator() {
+  return react__WEBPACK_IMPORTED_MODULE_0__["createElement"](Mouse, {
     xmlns: "http://www.w3.org/2000/svg",
     viewBox: "0 0 76 130",
     preserveAspectRatio: "xMidYmid meet",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7
+      lineNumber: 6
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("g", {
@@ -554,7 +835,7 @@ var ScrollIndicator = function ScrollIndicator() {
     fillRule: "evenodd",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 7
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("rect", {
@@ -567,7 +848,7 @@ var ScrollIndicator = function ScrollIndicator() {
     rx: "36",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 8
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0__["createElement"](MouseScroll, {
@@ -577,25 +858,260 @@ var ScrollIndicator = function ScrollIndicator() {
     fill: "#FFF",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 9
     },
     __self: this
-  }))));
+  })));
 };
 
-var ScrollIndicatorWrapper = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div.withConfig({
+var Mouse = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.svg.withConfig({
+  displayName: "desktop-scroll-indicator__Mouse",
+  componentId: "a2vv9i-0"
+})(["max-width:2.5rem;width:100%;height:auto;"]);
+var MouseScroll = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.circle.withConfig({
+  displayName: "desktop-scroll-indicator__MouseScroll",
+  componentId: "a2vv9i-1"
+})(["animation-name:scroll;animation-duration:1.5s;animation-timing-function:cubic-bezier(0.650,-0.550,0.250,1.500);animation-iteration-count:infinite;transform-origin:50% 20.5px;will-change:transform;@keyframes scroll{0%,20%{transform:translateY(0) scaleY(1);}10%{opacity:1;}100%{transform:translateY(36px) scaleY(2);opacity:0.01;}}"]);
+/* harmony default export */ __webpack_exports__["default"] = (DesktopScrollIndicator);
+
+/***/ }),
+
+/***/ "./components/pages/home_page/home_page_cta/scroll_indicator/desktop_scroll_indicator/index.ts":
+/*!*****************************************************************************************************!*\
+  !*** ./components/pages/home_page/home_page_cta/scroll_indicator/desktop_scroll_indicator/index.ts ***!
+  \*****************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _desktop_scroll_indicator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./desktop-scroll-indicator */ "./components/pages/home_page/home_page_cta/scroll_indicator/desktop_scroll_indicator/desktop-scroll-indicator.tsx");
+
+/* harmony default export */ __webpack_exports__["default"] = (_desktop_scroll_indicator__WEBPACK_IMPORTED_MODULE_0__["default"]);
+
+/***/ }),
+
+/***/ "./components/pages/home_page/home_page_cta/scroll_indicator/mobile_scroll_indicator/index.ts":
+/*!****************************************************************************************************!*\
+  !*** ./components/pages/home_page/home_page_cta/scroll_indicator/mobile_scroll_indicator/index.ts ***!
+  \****************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _mobile_scroll_indicator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./mobile-scroll-indicator */ "./components/pages/home_page/home_page_cta/scroll_indicator/mobile_scroll_indicator/mobile-scroll-indicator.tsx");
+
+/* harmony default export */ __webpack_exports__["default"] = (_mobile_scroll_indicator__WEBPACK_IMPORTED_MODULE_0__["default"]);
+
+/***/ }),
+
+/***/ "./components/pages/home_page/home_page_cta/scroll_indicator/mobile_scroll_indicator/mobile-scroll-indicator.tsx":
+/*!***********************************************************************************************************************!*\
+  !*** ./components/pages/home_page/home_page_cta/scroll_indicator/mobile_scroll_indicator/mobile-scroll-indicator.tsx ***!
+  \***********************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "styled-components");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "/home/ben/Projects/ColdFusion_Media/coldfusion_media-marketing-site/frontend/components/pages/home_page/home_page_cta/scroll_indicator/mobile_scroll_indicator/mobile-scroll-indicator.tsx";
+
+
+
+var MobileScrollIndicator = function MobileScrollIndicator() {
+  return react__WEBPACK_IMPORTED_MODULE_0__["createElement"](Mouse, {
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 0 76 130",
+    preserveAspectRatio: "xMidYmid meet",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("g", {
+    fill: "none",
+    fillRule: "evenodd",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("rect", {
+    width: "70",
+    height: "118",
+    x: "1.5",
+    y: "1.5",
+    stroke: "#FFF",
+    strokeWidth: "3",
+    rx: "36",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0__["createElement"](MouseScroll, {
+    cx: "36.5",
+    cy: "31.5",
+    r: "4.5",
+    fill: "#FFF",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
+    },
+    __self: this
+  })));
+};
+
+var Mouse = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.svg.withConfig({
+  displayName: "mobile-scroll-indicator__Mouse",
+  componentId: "rmmt53-0"
+})(["max-width:2.5rem;width:100%;height:auto;"]);
+var MouseScroll = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.circle.withConfig({
+  displayName: "mobile-scroll-indicator__MouseScroll",
+  componentId: "rmmt53-1"
+})(["animation-name:scroll;animation-duration:1.5s;animation-timing-function:cubic-bezier(0.650,-0.550,0.250,1.500);animation-iteration-count:infinite;transform-origin:50% 20.5px;will-change:transform;@keyframes scroll{0%,20%{transform:translateY(0) scaleY(1);}10%{opacity:1;}100%{transform:translateY(36px) scaleY(2);opacity:0.01;}}"]);
+/* harmony default export */ __webpack_exports__["default"] = (MobileScrollIndicator);
+
+/***/ }),
+
+/***/ "./components/pages/home_page/home_page_cta/scroll_indicator/scroll-indicator.tsx":
+/*!****************************************************************************************!*\
+  !*** ./components/pages/home_page/home_page_cta/scroll_indicator/scroll-indicator.tsx ***!
+  \****************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/slicedToArray */ "./node_modules/@babel/runtime-corejs2/helpers/esm/slicedToArray.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "styled-components");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _desktop_scroll_indicator__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./desktop_scroll_indicator */ "./components/pages/home_page/home_page_cta/scroll_indicator/desktop_scroll_indicator/index.ts");
+/* harmony import */ var _mobile_scroll_indicator__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./mobile_scroll_indicator */ "./components/pages/home_page/home_page_cta/scroll_indicator/mobile_scroll_indicator/index.ts");
+
+var _jsxFileName = "/home/ben/Projects/ColdFusion_Media/coldfusion_media-marketing-site/frontend/components/pages/home_page/home_page_cta/scroll_indicator/scroll-indicator.tsx";
+
+
+
+
+
+
+var ScrollIndicator = function ScrollIndicator() {
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(null),
+      _useState2 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__["default"])(_useState, 2),
+      isMobile = _useState2[0],
+      setIsMobile = _useState2[1];
+
+  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(false),
+      _useState4 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__["default"])(_useState3, 2),
+      show = _useState4[0],
+      setShow = _useState4[1];
+
+  Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(function () {
+    if (isMobile === null) setIsMobile(false);
+    if (!show) setTimeout(function () {
+      return setShow(true);
+    }, 1000);
+  });
+  if (!show) return null;
+  return react__WEBPACK_IMPORTED_MODULE_1__["createElement"](ScrollIndicatorWrapper, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21
+    },
+    __self: this
+  }, !isMobile ? react__WEBPACK_IMPORTED_MODULE_1__["createElement"](_desktop_scroll_indicator__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22
+    },
+    __self: this
+  }) : react__WEBPACK_IMPORTED_MODULE_1__["createElement"](_mobile_scroll_indicator__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22
+    },
+    __self: this
+  }));
+};
+
+var ScrollIndicatorWrapper = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div.withConfig({
   displayName: "scroll-indicator__ScrollIndicatorWrapper",
   componentId: "sc-1yp2pdl-0"
 })(["position:absolute;bottom:1rem;left:50%;transform:translateX(-50%);"]);
-var Mouse = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.svg.withConfig({
-  displayName: "scroll-indicator__Mouse",
-  componentId: "sc-1yp2pdl-1"
-})(["max-width:2.5rem;width:100%;height:auto;"]);
-var MouseScroll = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.circle.withConfig({
-  displayName: "scroll-indicator__MouseScroll",
-  componentId: "sc-1yp2pdl-2"
-})(["animation-name:scroll;animation-duration:1.5s;animation-timing-function:cubic-bezier(0.650,-0.550,0.250,1.500);animation-iteration-count:infinite;transform-origin:50% 20.5px;will-change:transform;@keyframes scroll{0%,20%{transform:translateY(0) scaleY(1);}10%{opacity:1;}100%{transform:translateY(36px) scaleY(2);opacity:0.01;}}"]);
 /* harmony default export */ __webpack_exports__["default"] = (ScrollIndicator);
+
+/***/ }),
+
+/***/ "./components/pages/home_page/home_page_services/home-page-services.tsx":
+/*!******************************************************************************!*\
+  !*** ./components/pages/home_page/home_page_services/home-page-services.tsx ***!
+  \******************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "/home/ben/Projects/ColdFusion_Media/coldfusion_media-marketing-site/frontend/components/pages/home_page/home_page_services/home-page-services.tsx";
+
+
+var HomePageServices = function HomePageServices() {
+  return react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("h1", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 5
+    },
+    __self: this
+  }, " Home Page Services ");
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (HomePageServices);
+
+/***/ }),
+
+/***/ "./components/pages/home_page/home_page_services/index.ts":
+/*!****************************************************************!*\
+  !*** ./components/pages/home_page/home_page_services/index.ts ***!
+  \****************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _home_page_services__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./home-page-services */ "./components/pages/home_page/home_page_services/home-page-services.tsx");
+
+/* harmony default export */ __webpack_exports__["default"] = (_home_page_services__WEBPACK_IMPORTED_MODULE_0__["default"]);
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/array/is-array.js":
+/*!***********************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/array/is-array.js ***!
+  \***********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! core-js/library/fn/array/is-array */ "core-js/library/fn/array/is-array");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/get-iterator.js":
+/*!*********************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/get-iterator.js ***!
+  \*********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! core-js/library/fn/get-iterator */ "core-js/library/fn/get-iterator");
 
 /***/ }),
 
@@ -607,6 +1123,17 @@ var MouseScroll = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.circl
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(/*! core-js/library/fn/json/stringify */ "core-js/library/fn/json/stringify");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/object/assign.js":
+/*!**********************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/object/assign.js ***!
+  \**********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! core-js/library/fn/object/assign */ "core-js/library/fn/object/assign");
 
 /***/ }),
 
@@ -739,6 +1266,137 @@ function _createClass(Constructor, protoProps, staticProps) {
 }
 
 module.exports = _createClass;
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/arrayWithHoles.js":
+/*!***************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/arrayWithHoles.js ***!
+  \***************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _arrayWithHoles; });
+/* harmony import */ var _core_js_array_is_array__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/array/is-array */ "./node_modules/@babel/runtime-corejs2/core-js/array/is-array.js");
+/* harmony import */ var _core_js_array_is_array__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_array_is_array__WEBPACK_IMPORTED_MODULE_0__);
+
+function _arrayWithHoles(arr) {
+  if (_core_js_array_is_array__WEBPACK_IMPORTED_MODULE_0___default()(arr)) return arr;
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/extends.js":
+/*!********************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/extends.js ***!
+  \********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _extends; });
+/* harmony import */ var _core_js_object_assign__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/object/assign */ "./node_modules/@babel/runtime-corejs2/core-js/object/assign.js");
+/* harmony import */ var _core_js_object_assign__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_assign__WEBPACK_IMPORTED_MODULE_0__);
+
+function _extends() {
+  _extends = _core_js_object_assign__WEBPACK_IMPORTED_MODULE_0___default.a || function (target) {
+    for (var i = 1; i < arguments.length; i++) {
+      var source = arguments[i];
+
+      for (var key in source) {
+        if (Object.prototype.hasOwnProperty.call(source, key)) {
+          target[key] = source[key];
+        }
+      }
+    }
+
+    return target;
+  };
+
+  return _extends.apply(this, arguments);
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/iterableToArrayLimit.js":
+/*!*********************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/iterableToArrayLimit.js ***!
+  \*********************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _iterableToArrayLimit; });
+/* harmony import */ var _core_js_get_iterator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/get-iterator */ "./node_modules/@babel/runtime-corejs2/core-js/get-iterator.js");
+/* harmony import */ var _core_js_get_iterator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_get_iterator__WEBPACK_IMPORTED_MODULE_0__);
+
+function _iterableToArrayLimit(arr, i) {
+  var _arr = [];
+  var _n = true;
+  var _d = false;
+  var _e = undefined;
+
+  try {
+    for (var _i = _core_js_get_iterator__WEBPACK_IMPORTED_MODULE_0___default()(arr), _s; !(_n = (_s = _i.next()).done); _n = true) {
+      _arr.push(_s.value);
+
+      if (i && _arr.length === i) break;
+    }
+  } catch (err) {
+    _d = true;
+    _e = err;
+  } finally {
+    try {
+      if (!_n && _i["return"] != null) _i["return"]();
+    } finally {
+      if (_d) throw _e;
+    }
+  }
+
+  return _arr;
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/nonIterableRest.js":
+/*!****************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/nonIterableRest.js ***!
+  \****************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _nonIterableRest; });
+function _nonIterableRest() {
+  throw new TypeError("Invalid attempt to destructure non-iterable instance");
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/slicedToArray.js":
+/*!**************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/slicedToArray.js ***!
+  \**************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _slicedToArray; });
+/* harmony import */ var _arrayWithHoles__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./arrayWithHoles */ "./node_modules/@babel/runtime-corejs2/helpers/esm/arrayWithHoles.js");
+/* harmony import */ var _iterableToArrayLimit__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./iterableToArrayLimit */ "./node_modules/@babel/runtime-corejs2/helpers/esm/iterableToArrayLimit.js");
+/* harmony import */ var _nonIterableRest__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./nonIterableRest */ "./node_modules/@babel/runtime-corejs2/helpers/esm/nonIterableRest.js");
+
+
+
+function _slicedToArray(arr, i) {
+  return Object(_arrayWithHoles__WEBPACK_IMPORTED_MODULE_0__["default"])(arr) || Object(_iterableToArrayLimit__WEBPACK_IMPORTED_MODULE_1__["default"])(arr, i) || Object(_nonIterableRest__WEBPACK_IMPORTED_MODULE_2__["default"])();
+}
 
 /***/ }),
 
@@ -1194,6 +1852,28 @@ module.exports = __webpack_require__(/*! /home/ben/Projects/ColdFusion_Media/col
 
 /***/ }),
 
+/***/ "core-js/library/fn/array/is-array":
+/*!****************************************************!*\
+  !*** external "core-js/library/fn/array/is-array" ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("core-js/library/fn/array/is-array");
+
+/***/ }),
+
+/***/ "core-js/library/fn/get-iterator":
+/*!**************************************************!*\
+  !*** external "core-js/library/fn/get-iterator" ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("core-js/library/fn/get-iterator");
+
+/***/ }),
+
 /***/ "core-js/library/fn/json/stringify":
 /*!****************************************************!*\
   !*** external "core-js/library/fn/json/stringify" ***!
@@ -1202,6 +1882,17 @@ module.exports = __webpack_require__(/*! /home/ben/Projects/ColdFusion_Media/col
 /***/ (function(module, exports) {
 
 module.exports = require("core-js/library/fn/json/stringify");
+
+/***/ }),
+
+/***/ "core-js/library/fn/object/assign":
+/*!***************************************************!*\
+  !*** external "core-js/library/fn/object/assign" ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("core-js/library/fn/object/assign");
 
 /***/ }),
 
