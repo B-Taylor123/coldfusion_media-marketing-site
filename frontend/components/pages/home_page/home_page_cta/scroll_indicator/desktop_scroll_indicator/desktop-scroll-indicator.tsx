@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { FunctionComponent } from 'react';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
 const DesktopScrollIndicator: FunctionComponent = () => (
     <Mouse xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76 130" preserveAspectRatio="xMidYmid meet">
@@ -17,28 +17,28 @@ const Mouse = styled.svg`
     height: auto;
 `;
 
+const scroll = keyframes`
+    0%, 20% {
+        transform: translateY(0) scaleY(1);
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(36px) scaleY(2);
+        opacity: 0.01;
+    }
+`;
+
 const MouseScroll = styled.circle`
-    animation-name: scroll;
+    animation-name: ${ scroll };
     animation-duration: 1.5s;
     animation-timing-function: cubic-bezier(0.650, -0.550, 0.250, 1.500);
     animation-iteration-count: infinite;
     transform-origin: 50% 20.5px;
     will-change: transform;
-
-    @keyframes scroll {
-        0%, 20% {
-            transform: translateY(0) scaleY(1);
-        }
-
-        10% {
-            opacity: 1;
-        }
-
-        100% {
-            transform: translateY(36px) scaleY(2);
-            opacity: 0.01;
-        }
-    }
 `;
 
 export default DesktopScrollIndicator;

@@ -1,10 +1,11 @@
 const express = require('express');
+const cors = require('cors');
 
 const app = express();
 
 app.use(express.json());
 
-app.post('/email/contact', (req, res) => {
+app.post('/email/contact', cors(), (req, res) => {
     console.log('req.url', req.url);
     console.log('req.body', req.body);
     res.sendStatus(200);
