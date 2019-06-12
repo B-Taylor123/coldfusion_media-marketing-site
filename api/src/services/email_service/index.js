@@ -1,11 +1,13 @@
+
 const express = require('express');
-const cors = require('cors');
+const corsMiddleware = require('./middleware/cors-middleware');
 
 const app = express();
 
+app.use(corsMiddleware);
 app.use(express.json());
 
-app.post('/email/contact', cors(), (req, res) => {
+app.post('/email/contact', (req, res) => {
     console.log('req.url', req.url);
     console.log('req.body', req.body);
     res.sendStatus(200);
