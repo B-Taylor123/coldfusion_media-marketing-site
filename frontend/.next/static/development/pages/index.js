@@ -346,7 +346,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var _services_http_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../../../services/http-service */ "./services/http-service.ts");
-/* harmony import */ var _form_input_row__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./form_input_row */ "./components/pages/home_page/home_page_contact/contact_form/form_input_row/index.ts");
+/* harmony import */ var _form_row__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./form_row */ "./components/pages/home_page/home_page_contact/contact_form/form_row/index.ts");
 /* harmony import */ var _form_input__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./form_input */ "./components/pages/home_page/home_page_contact/contact_form/form_input/index.ts");
 /* harmony import */ var _ui_button__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../../ui/button */ "./components/ui/button/index.ts");
 
@@ -385,11 +385,23 @@ var ContactForm = function ContactForm() {
       lineNumber: 30
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_form_input_row__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    doubleInputRow: true,
+  }, react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_form_row__WEBPACK_IMPORTED_MODULE_5__["default"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 31
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_2__["createElement"]("h2", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 32
+    },
+    __self: this
+  }, " Get in touch ")), react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_form_row__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    doubleItemRow: true,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 35
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_form_input__WEBPACK_IMPORTED_MODULE_6__["default"], {
@@ -401,7 +413,7 @@ var ContactForm = function ContactForm() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 36
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_form_input__WEBPACK_IMPORTED_MODULE_6__["default"], {
@@ -413,17 +425,17 @@ var ContactForm = function ContactForm() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 37
     },
     __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_form_input_row__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  })), react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_form_row__WEBPACK_IMPORTED_MODULE_5__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36
+      lineNumber: 40
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_form_input__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    type: "text",
+    type: "email",
     placeholder: "Email...",
     value: contactForm.email.value,
     onChange: function onChange(e) {
@@ -431,20 +443,20 @@ var ContactForm = function ContactForm() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37
+      lineNumber: 41
     },
     __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_form_input_row__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  })), react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_form_row__WEBPACK_IMPORTED_MODULE_5__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40
+      lineNumber: 44
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_ui_button__WEBPACK_IMPORTED_MODULE_7__["default"], {
     type: "submit",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 45
     },
     __self: this
   }, " Submit ")));
@@ -528,10 +540,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./components/pages/home_page/home_page_contact/contact_form/form_input_row/form-input-row.tsx":
-/*!*****************************************************************************************************!*\
-  !*** ./components/pages/home_page/home_page_contact/contact_form/form_input_row/form-input-row.tsx ***!
-  \*****************************************************************************************************/
+/***/ "./components/pages/home_page/home_page_contact/contact_form/form_row/form-row.tsx":
+/*!*****************************************************************************************!*\
+  !*** ./components/pages/home_page/home_page_contact/contact_form/form_row/form-row.tsx ***!
+  \*****************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -540,13 +552,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-var _jsxFileName = "/home/ben/Projects/ColdFusion_Media/coldfusion_media-marketing-site/frontend/components/pages/home_page/home_page_contact/contact_form/form_input_row/form-input-row.tsx";
+var _jsxFileName = "/home/ben/Projects/ColdFusion_Media/coldfusion_media-marketing-site/frontend/components/pages/home_page/home_page_contact/contact_form/form_row/form-row.tsx";
 
 
 
-var FormInputRow = function FormInputRow(props) {
+var FormRow = function FormRow(props) {
   return react__WEBPACK_IMPORTED_MODULE_0__["createElement"](Row, {
-    className: props.doubleInputRow && 'double-input-row',
+    className: props.doubleItemRow && 'double-item-row',
     __source: {
       fileName: _jsxFileName,
       lineNumber: 10
@@ -556,25 +568,25 @@ var FormInputRow = function FormInputRow(props) {
 };
 
 var Row = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
-  displayName: "form-input-row__Row",
-  componentId: "sc-1jyevci-0"
-})(["width:100%;height:auto;display:flex;flex-direction:row;justify-content:space-between;padding:1rem 0 1rem 0;&.double-input-row{input{width:49%;}}"]);
-/* harmony default export */ __webpack_exports__["default"] = (FormInputRow);
+  displayName: "form-row__Row",
+  componentId: "sc-14fuu8f-0"
+})(["width:100%;height:auto;display:flex;flex-direction:row;justify-content:space-between;padding:1rem 0 1rem 0;&.double-item-row{input{width:49%;}}"]);
+/* harmony default export */ __webpack_exports__["default"] = (FormRow);
 
 /***/ }),
 
-/***/ "./components/pages/home_page/home_page_contact/contact_form/form_input_row/index.ts":
-/*!*******************************************************************************************!*\
-  !*** ./components/pages/home_page/home_page_contact/contact_form/form_input_row/index.ts ***!
-  \*******************************************************************************************/
+/***/ "./components/pages/home_page/home_page_contact/contact_form/form_row/index.ts":
+/*!*************************************************************************************!*\
+  !*** ./components/pages/home_page/home_page_contact/contact_form/form_row/index.ts ***!
+  \*************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _form_input_row__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./form-input-row */ "./components/pages/home_page/home_page_contact/contact_form/form_input_row/form-input-row.tsx");
+/* harmony import */ var _form_row__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./form-row */ "./components/pages/home_page/home_page_contact/contact_form/form_row/form-row.tsx");
 
-/* harmony default export */ __webpack_exports__["default"] = (_form_input_row__WEBPACK_IMPORTED_MODULE_0__["default"]);
+/* harmony default export */ __webpack_exports__["default"] = (_form_row__WEBPACK_IMPORTED_MODULE_0__["default"]);
 
 /***/ }),
 
@@ -1026,20 +1038,121 @@ var ScrollIndicatorWrapper = styled_components__WEBPACK_IMPORTED_MODULE_2__["def
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var _home_page_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./home_page_service */ "./components/pages/home_page/home_page_services/home_page_service/index.ts");
 var _jsxFileName = "/home/ben/Projects/ColdFusion_Media/coldfusion_media-marketing-site/frontend/components/pages/home_page/home_page_services/home-page-services.tsx";
 
 
+
+
 var HomePageServices = function HomePageServices() {
-  return react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("h1", {
+  return react__WEBPACK_IMPORTED_MODULE_0__["createElement"](HomePageServicesWrapper, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 5
+      lineNumber: 8
     },
     __self: this
-  }, " Home Page Services ");
+  }, react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_home_page_service__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    title: "Software Development",
+    shortBody: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_home_page_service__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    title: "Process Refinement",
+    shortBody: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_home_page_service__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    title: "Social Media Marketing",
+    shortBody: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_home_page_service__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    title: "Photo & Video",
+    shortBody: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21
+    },
+    __self: this
+  }));
 };
 
+var HomePageServicesWrapper = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
+  displayName: "home-page-services__HomePageServicesWrapper",
+  componentId: "sc-10dqt2t-0"
+})(["width:90%;height:100%;margin:0 5% 0 5%;display:flex;flex-direction:row;justify-content:space-between;align-items:center;"]);
 /* harmony default export */ __webpack_exports__["default"] = (HomePageServices);
+
+/***/ }),
+
+/***/ "./components/pages/home_page/home_page_services/home_page_service/home-page-service.tsx":
+/*!***********************************************************************************************!*\
+  !*** ./components/pages/home_page/home_page_services/home_page_service/home-page-service.tsx ***!
+  \***********************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+var _jsxFileName = "/home/ben/Projects/ColdFusion_Media/coldfusion_media-marketing-site/frontend/components/pages/home_page/home_page_services/home_page_service/home-page-service.tsx";
+
+
+
+var HomePageService = function HomePageService(props) {
+  return react__WEBPACK_IMPORTED_MODULE_0__["createElement"](HomePageServiceWrapper, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("h3", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    },
+    __self: this
+  }, props.title), react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
+    },
+    __self: this
+  }, props.shortBody));
+};
+
+var HomePageServiceWrapper = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
+  displayName: "home-page-service__HomePageServiceWrapper",
+  componentId: "o3u8fd-0"
+})(["width:20%;height:50%;padding:1rem;display:flex;flex-direction:column;justify-content:space-around;align-items:center;border:1px solid white;background-color:rgba(0,0,0,0);border-radius:8px;color:white;font-size:var(--font-size-m);"]);
+/* harmony default export */ __webpack_exports__["default"] = (HomePageService);
+
+/***/ }),
+
+/***/ "./components/pages/home_page/home_page_services/home_page_service/index.ts":
+/*!**********************************************************************************!*\
+  !*** ./components/pages/home_page/home_page_services/home_page_service/index.ts ***!
+  \**********************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _home_page_service__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./home-page-service */ "./components/pages/home_page/home_page_services/home_page_service/home-page-service.tsx");
+
+/* harmony default export */ __webpack_exports__["default"] = (_home_page_service__WEBPACK_IMPORTED_MODULE_0__["default"]);
 
 /***/ }),
 

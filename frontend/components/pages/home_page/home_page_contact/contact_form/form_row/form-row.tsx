@@ -2,12 +2,12 @@ import * as React from 'react';
 import { FunctionComponent } from 'react';
 import styled from 'styled-components';
 
-interface IFormInputRowProps {
-    doubleInputRow?: boolean;
+interface IFormRowProps {
+    doubleItemRow?: boolean;
 }
 
-const FormInputRow: FunctionComponent<IFormInputRowProps> = props => (
-    <Row className={ props.doubleInputRow && 'double-input-row' }>
+const FormRow: FunctionComponent<IFormRowProps> = props => (
+    <Row className={ props.doubleItemRow && 'double-item-row' }>
         { props.children }
     </Row>
 );
@@ -19,11 +19,11 @@ const Row = styled.div`
     flex-direction: row;
     justify-content: space-between;
     padding: 1rem 0 1rem 0;
-    &.double-input-row {
+    &.double-item-row {
         input {
             width: 49%;
         }
     }
 `;
 
-export default FormInputRow;
+export default FormRow;

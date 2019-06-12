@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 import { post } from '../../../../../services/http-service';
 
-import FormInputRow from './form_input_row';
+import FormRow from './form_row';
 import FormInput from './form_input';
 import Button from '../../../../ui/button';
 
@@ -28,18 +28,22 @@ const ContactForm: FunctionComponent = () => {
 
     return (
         <Form onSubmit={ e => submit(e, contactForm) }>
-            <FormInputRow doubleInputRow>
+            <FormRow>
+                <h2> Get in touch </h2>
+            </FormRow>
+
+            <FormRow doubleItemRow>
                 <FormInput type="text" placeholder="First name..." value={ contactForm.firstName.value } onChange={ e => updateContactFormState(e.currentTarget.value, 'firstName', contactForm, setContactFormState) }/>
                 <FormInput type="text" placeholder="Last name..." value={ contactForm.lastName.value } onChange={ e => updateContactFormState(e.currentTarget.value, 'lastName', contactForm, setContactFormState) }/>
-            </FormInputRow>
+            </FormRow>
 
-            <FormInputRow>
-                <FormInput type="text" placeholder="Email..." value={ contactForm.email.value } onChange={ e => updateContactFormState(e.currentTarget.value, 'email', contactForm, setContactFormState) }/>
-            </FormInputRow>
+            <FormRow>
+                <FormInput type="email" placeholder="Email..." value={ contactForm.email.value } onChange={ e => updateContactFormState(e.currentTarget.value, 'email', contactForm, setContactFormState) }/>
+            </FormRow>
 
-            <FormInputRow>
+            <FormRow>
                 <Button type="submit"> Submit </Button>
-            </FormInputRow>
+            </FormRow>
         </Form>
     );
 };
