@@ -1,6 +1,7 @@
 
 const express = require('express');
 const corsMiddleware = require('./middleware/cors-middleware');
+const sendEmail = require('./send-email');
 
 const app = express();
 
@@ -8,10 +9,36 @@ app.use(corsMiddleware);
 app.use(express.json());
 
 app.post('/email/contact', (req, res) => {
-    console.log('req.url', req.url);
-    console.log('req.body', req.body);
+    const model = req.body;
+
+    console.log('model', model);
+    
+    // Validate model
+    if (!isCreateEmailRequestValid(model)) {
+        res.sendStatus(400);
+        return;
+    }
+
+    // Call send email
+    const response = sendEmail(req.body);
+
+    // Return error if send email returns null
+    if (response === null) {
+        res.sendStatus(500);
+        return;
+    }
+
+    // Return success if send email returns data
     res.sendStatus(200);
 });
+
+const isCreateEmailRequestValid = (model) => {
+    const { firstName } = model;
+
+    if (typeof firstname === 'undefined' | firstName === null | firstName.length <= 0) return false;
+
+    return true;
+};
 
 const PORT = 5000;
 
