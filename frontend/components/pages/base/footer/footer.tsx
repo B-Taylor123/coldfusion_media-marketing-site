@@ -2,9 +2,21 @@ import * as React from 'react';
 import { FunctionComponent } from 'react';
 import styled from 'styled-components';
 
+import Icon from '../../../ui/icon';
+
 const Footer: FunctionComponent = () => {
     return(
-        <StyledFooter/>
+        <StyledFooter>
+            <SocialIcons>
+                <Icon scale="x1"/>
+                <Icon scale="x1"/>
+                <Icon scale="x1"/>
+            </SocialIcons>
+
+            <div>
+                &copy; 2019 Coldfusion Media
+            </div>
+        </StyledFooter>
     );
 };
 
@@ -22,19 +34,13 @@ const StyledFooter = styled.footer`
     font-size: var(--font-size-s);
 `;
 
-// .footer--social-icons {
-//     width: 150px;
-//     height: 100%;
-//     display: flex;
-//     flex-direction: row;
-//     justify-content: space-between;
-//     align-items: center;
-//     .footer--social-icon {
-//         width: 40px;
-//         height: 40px;
-//         background-color: #C4C4C4;
-//         border-radius: 1000px;
-//     }
-// }
+const SocialIcons =  styled.div`
+    width: 150px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+`;
 
 export default Footer;

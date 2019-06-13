@@ -3,7 +3,7 @@ import { FunctionComponent } from 'react';
 import styled from 'styled-components';
 
 interface IIconProps {
-    scale: '1x' | '2x';
+    scale: 'x1' | 'x2';
 }
 
 const Icon: FunctionComponent<IIconProps> = props => (
@@ -11,15 +11,25 @@ const Icon: FunctionComponent<IIconProps> = props => (
 );
 
 const IconPlaceholder = styled.div`
-    background-color: rgba(0, 0, 0, .5);
+    background-color: rgba(0, 0, 0, .3);
     border-radius: 50%;
-    &.1x {
-        width: 20px;
-        height: 20px;
+    &.x1 {
+        --size: 30px;
+        width: var(--size);
+        min-width: var(--size);
+        max-width: var(--size);
+        height: var(--size);
+        min-height: var(--size);
+        max-height: var(--size);
     }
-    &.2x {
-        width: 40px;
-        height: 40px;
+    &.x2 {
+        --size: 60px;
+        width: var(--size);
+        min-width: var(--size);
+        max-width: var(--size);
+        height: var(--size);
+        min-height: var(--size);
+        max-height: var(--size);
     }
 `;
 

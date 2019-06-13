@@ -6,7 +6,9 @@ import styled from 'styled-components';
 const HeaderBar: FunctionComponent = () => {
     return(
         <Header>
-            <span> ColdFusion Media </span>
+            <Link href="/">
+                <HeaderMenuItem> ColdFusion Media </HeaderMenuItem>
+            </Link>
 
             <HeaderMenu>
                 <Link href="/work">
@@ -44,6 +46,7 @@ const HeaderMenu = styled.nav`
 const HeaderMenuItem = styled.a`
     text-decoration: none;
     color: var(--font-colour);
+    cursor: pointer;
 `;
 
 export default HeaderBar;

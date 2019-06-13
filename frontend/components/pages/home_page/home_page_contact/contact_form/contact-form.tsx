@@ -17,13 +17,21 @@ interface IContactForm {
     firstName: IContactFormField<string>;
     lastName: IContactFormField<string>;
     email: IContactFormField<string>;
+    role: IContactFormField<string>;
+    companyName: IContactFormField<string>;
+    companyWebsite: IContactFormField<string>;
+    message: IContactFormField<string>;
 }
 
 const ContactForm: FunctionComponent = () => {
     const [ contactForm, setContactFormState ] = useState<IContactForm>({
         firstName: { value: '' },
         lastName: { value: '' },
-        email: { value: '' }
+        email: { value: '' },
+        role: { value: '' },
+        companyName: { value: '' },
+        companyWebsite: { value: '' },
+        message: { value: '' }
     });
 
     return (
@@ -33,12 +41,25 @@ const ContactForm: FunctionComponent = () => {
             </FormRow>
 
             <FormRow doubleItemRow>
-                <FormInput type="text" placeholder="First name..." value={ contactForm.firstName.value } onChange={ e => updateContactFormState(e.currentTarget.value, 'firstName', contactForm, setContactFormState) }/>
-                <FormInput type="text" placeholder="Last name..." value={ contactForm.lastName.value } onChange={ e => updateContactFormState(e.currentTarget.value, 'lastName', contactForm, setContactFormState) }/>
+                <FormInput type="text" placeholder="First name*" value={ contactForm.firstName.value } onChange={ e => updateContactFormState(e.currentTarget.value, 'firstName', contactForm, setContactFormState) }/>
+                <FormInput type="text" placeholder="Last name*" value={ contactForm.lastName.value } onChange={ e => updateContactFormState(e.currentTarget.value, 'lastName', contactForm, setContactFormState) }/>
             </FormRow>
 
             <FormRow>
-                <FormInput type="email" placeholder="Email..." value={ contactForm.email.value } onChange={ e => updateContactFormState(e.currentTarget.value, 'email', contactForm, setContactFormState) }/>
+                <FormInput type="email" placeholder="Email*" value={ contactForm.email.value } onChange={ e => updateContactFormState(e.currentTarget.value, 'email', contactForm, setContactFormState) }/>
+            </FormRow>
+
+            <FormRow doubleItemRow>
+                <FormInput type="text" placeholder="Company name" value={ contactForm.companyName.value } onChange={ e => updateContactFormState(e.currentTarget.value, 'companyName', contactForm, setContactFormState) }/>
+                <FormInput type="text" placeholder="Role" value={ contactForm.role.value } onChange={ e => updateContactFormState(e.currentTarget.value, 'role', contactForm, setContactFormState) }/>
+            </FormRow>
+
+            <FormRow>
+                <FormInput type="text" placeholder="Company website" value={ contactForm.companyWebsite.value } onChange={ e => updateContactFormState(e.currentTarget.value, 'companyWebsite', contactForm, setContactFormState) }/>
+            </FormRow>
+
+            <FormRow>
+                <FormInput type="text" placeholder="Message*" value={ contactForm.message.value } onChange={ e => updateContactFormState(e.currentTarget.value, 'message', contactForm, setContactFormState) }/>
             </FormRow>
 
             <FormRow>
