@@ -2,17 +2,18 @@ import * as React from 'react';
 import { FunctionComponent } from 'react';
 import styled from 'styled-components';
 
-import Icon from '../../../../ui/icon';
+import Icon, { Icons } from '../../../../ui/icon';
 
 interface IHomePageServiceProps {
     title: string;
     shortBody: string;
+    iconName?: Icons;
 }
 
 const HomePageService: FunctionComponent<IHomePageServiceProps> = props => (
     <HomePageServiceWrapper>
         <HomePageServiceHeading>
-            <Icon scale="x2"/>
+            <Icon scale="x2" iconName={ props.iconName }/>
 
             <h3>{ props.title }</h3>
         </HomePageServiceHeading>

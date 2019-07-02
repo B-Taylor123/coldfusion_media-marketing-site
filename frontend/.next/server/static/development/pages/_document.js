@@ -2331,22 +2331,22 @@ function (_Document) {
           lineNumber: 32
         },
         __self: this
-      }, "\n            /* apply a natural box layout model to all elements, but allowing components to change */\n            html {\n              box-sizing: border-box;\n            }\n\n            *, *:before, *:after {\n              box-sizing: border-box;\n            }\n\n            html {\n              width: 100%;\n              height: 100%;\n              font-size: 16px;\n              font-family: Roboto, sans-serif;\n\n              --main-bg-colour: #1A1A1A;\n              --secondary-bg-colour: #E0E0E0;\n              --font-colour: #DEDEDE;\n              --font-colour-dark: #353535;\n              --brand-blue: #397FCB;\n              \n              --font-size-xl: 5rem;\n              --font-size-l: 2rem;\n              --font-size-m: 1.5rem;\n              --font-size-s: 1rem;\n              --font-size-xs: .5rem;\n\n              --header-bar-height: 4rem;\n              --footer-height: 4rem;\n\n              background-color: var(--main-bg-colour);\n              color: var(--font-colour);\n            }\n\n            body {\n              width: 100%;\n              height: 100%;\n              margin: 0;\n              scroll-snap-type: y mandatory;\n            }\n\n            #__next {\n              width: 100%;\n              height: 100%;\n            }\n          ")), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("body", {
+      }, "\n            /* apply a natural box layout model to all elements, but allowing components to change */\n            html {\n              box-sizing: border-box;\n            }\n\n            *, *:before, *:after {\n              box-sizing: border-box;\n            }\n\n            html {\n              width: 100%;\n              height: 100%;\n              font-size: 16px;\n              font-family: Roboto, sans-serif;\n\n              --main-bg-colour: #1A1A1A;\n              --secondary-bg-colour: #E0E0E0;\n              --font-colour: #DEDEDE;\n              --font-colour-dark: #353535;\n              --brand-blue: #397FCB;\n              \n              --font-size-xl: 5rem;\n              --font-size-l: 2rem;\n              --font-size-m: 1.5rem;\n              --font-size-s: 1rem;\n              --font-size-xs: .5rem;\n\n              --header-bar-height: 4rem;\n              --footer-height: 4rem;\n\n              background-color: var(--main-bg-colour);\n              color: var(--font-colour);\n            }\n\n            body {\n              width: 100%;\n              height: 100%;\n              margin: 0;\n              scroll-snap-type: y mandatory;\n            }\n\n            #__next {\n              width: 100%;\n              height: 100%;\n            }\n\n            @media only screen \n              /* and (min-device-width: 375px)  */\n              and (max-device-width: 667px) \n              and (-webkit-min-device-pixel-ratio: 2) {\n              html {\n                  font-size: 8px;\n              }\n            }\n          ")), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("body", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 80
+          lineNumber: 89
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_10__["Main"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 81
+          lineNumber: 90
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_10__["NextScript"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 82
+          lineNumber: 91
         },
         __self: this
       })));

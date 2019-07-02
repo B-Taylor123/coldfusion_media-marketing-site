@@ -2,15 +2,15 @@ import * as React from 'react';
 import { FunctionComponent } from 'react';
 import styled from 'styled-components';
 
-import Icon from '../../../ui/icon';
+// import Icon from '../../../ui/icon';
 
 const Footer: FunctionComponent = () => {
     return(
         <StyledFooter>
             <SocialIcons>
+                {/* <Icon scale="x1"/>
                 <Icon scale="x1"/>
-                <Icon scale="x1"/>
-                <Icon scale="x1"/>
+                <Icon scale="x1"/> */}
             </SocialIcons>
 
             <div>

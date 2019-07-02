@@ -75,6 +75,15 @@ class MyDocument extends Document {
               width: 100%;
               height: 100%;
             }
+
+            @media only screen 
+              /* and (min-device-width: 375px)  */
+              and (max-device-width: 667px) 
+              and (-webkit-min-device-pixel-ratio: 2) {
+              html {
+                  font-size: 8px;
+              }
+            }
           `}</style>
         </Head>
         <body>

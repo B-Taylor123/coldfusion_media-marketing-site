@@ -3,16 +3,19 @@ import { FunctionComponent } from 'react';
 import styled from 'styled-components';
 
 import HomePageService from './home_page_service';
+import { Icons } from '../../../ui/icon';
 
 const HomePageServices: FunctionComponent = () => (
     <HomePageServicesWrapper>
         <HomePageService
             title="Software Development"
-            shortBody="We have a wealth of commercial experiance creating everything from promotional websites to enterprise grade web applications and mobile apps which we can apply to creating your perfect application."/>
+            shortBody="We have a wealth of commercial experiance creating everything from promotional websites to enterprise grade web applications and mobile apps which we can apply to creating your perfect application."
+            iconName={ Icons.laptopCodeSolid }/>
 
         <HomePageService
             title="Process Refinement"
-            shortBody="We can analyze your business or manufacturing processes and advise you on the most meaningful optimisations and automations and where apropriate craft bespoke software and hardware to... [WHAT WILL IT DO]"/>
+            shortBody="We can analyze your business or manufacturing processes and advise you on the most meaningful optimisations and automations and where apropriate craft bespoke software and hardware to... [WHAT WILL IT DO]"
+            iconName={ Icons.chartLineSolid }/>
 
         <HomePageService
             title="Social Media Marketing"
