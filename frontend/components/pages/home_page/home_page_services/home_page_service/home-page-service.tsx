@@ -13,7 +13,7 @@ interface IHomePageServiceProps {
 const HomePageService: FunctionComponent<IHomePageServiceProps> = props => (
     <HomePageServiceWrapper>
         <HomePageServiceHeading>
-            <Icon scale="x2" iconName={ props.iconName }/>
+            <Icon scale="2x" iconName={ props.iconName }/>
 
             <h3>{ props.title }</h3>
         </HomePageServiceHeading>

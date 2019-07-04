@@ -1,5 +1,5 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document';
-import { ServerStyleSheet } from 'styled-components';
+import { ServerStyleSheet, createGlobalStyle } from 'styled-components';
 
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -28,65 +28,9 @@ class MyDocument extends Document {
   render() {
     return (
       <Html>
-        <Head>
-          <style>{`
-            /* apply a natural box layout model to all elements, but allowing components to change */
-            html {
-              box-sizing: border-box;
-            }
-
-            *, *:before, *:after {
-              box-sizing: border-box;
-            }
-
-            html {
-              width: 100%;
-              height: 100%;
-              font-size: 16px;
-              font-family: Roboto, sans-serif;
-
-              --main-bg-colour: #1A1A1A;
-              --secondary-bg-colour: #E0E0E0;
-              --font-colour: #DEDEDE;
-              --font-colour-dark: #353535;
-              --brand-blue: #397FCB;
-              
-              --font-size-xl: 5rem;
-              --font-size-l: 2rem;
-              --font-size-m: 1.5rem;
-              --font-size-s: 1rem;
-              --font-size-xs: .5rem;
-
-              --header-bar-height: 4rem;
-              --footer-height: 4rem;
-
-              background-color: var(--main-bg-colour);
-              color: var(--font-colour);
-            }
-
-            body {
-              width: 100%;
-              height: 100%;
-              margin: 0;
-              scroll-snap-type: y mandatory;
-            }
-
-            #__next {
-              width: 100%;
-              height: 100%;
-            }
-
-            @media only screen 
-              /* and (min-device-width: 375px)  */
-              and (max-device-width: 667px) 
-              and (-webkit-min-device-pixel-ratio: 2) {
-              html {
-                  font-size: 8px;
-              }
-            }
-          `}</style>
-        </Head>
+        <Head/>
         <body>
+          <GlobalStyles/>
           <Main />
           <NextScript />
         </body>
@@ -94,5 +38,62 @@ class MyDocument extends Document {
     );
   }
 }
+
+const GlobalStyles = createGlobalStyle`
+  /* apply a natural box layout model to all elements, but allowing components to change */
+  html {
+    box-sizing: border-box;
+  }
+
+  *, *:before, *:after {
+    box-sizing: border-box;
+  }
+
+  html {
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    font-family: Roboto, sans-serif;
+
+    --main-bg-colour: #1A1A1A;
+    --secondary-bg-colour: #E0E0E0;
+    --font-colour: #DEDEDE;
+    --font-colour-dark: #353535;
+    --brand-blue: #397FCB;
+    
+    --font-size-xl: 5rem;
+    --font-size-l: 2rem;
+    --font-size-m: 1.5rem;
+    --font-size-s: 1.2rem;
+    --font-size-xs: .5rem;
+
+    --header-bar-height: 4rem;
+    --footer-height: 4rem;
+
+    background-color: var(--main-bg-colour);
+    color: var(--font-colour);
+  }
+
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    scroll-snap-type: y mandatory;
+  }
+
+  #__next {
+    width: 100%;
+    height: 100%;
+  }
+
+  @media only screen 
+    /* and (min-device-width: 375px)  */
+    and (max-device-width: 667px) 
+    and (-webkit-min-device-pixel-ratio: 2) {
+    html {
+        font-size: 8px;
+    }
+  }
+`;
 
 export default MyDocument;

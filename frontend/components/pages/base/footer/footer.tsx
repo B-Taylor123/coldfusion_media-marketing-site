@@ -8,9 +8,9 @@ const Footer: FunctionComponent = () => {
     return(
         <StyledFooter>
             <SocialIcons>
-                {/* <Icon scale="x1"/>
-                <Icon scale="x1"/>
-                <Icon scale="x1"/> */}
+                {/* <Icon scale="1x"/>
+                <Icon scale="1x"/>
+                <Icon scale="1x"/> */}
             </SocialIcons>
 
             <div>

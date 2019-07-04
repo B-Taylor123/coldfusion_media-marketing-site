@@ -1242,7 +1242,7 @@ var HomePageService = function HomePageService(props) {
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_ui_icon__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    scale: "x2",
+    scale: "2x",
     iconName: props.iconName,
     __source: {
       fileName: _jsxFileName,
@@ -1372,7 +1372,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "styled-components");
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @fortawesome/react-fontawesome */ "@fortawesome/react-fontawesome");
+/* harmony import */ var _fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @fortawesome/free-solid-svg-icons */ "@fortawesome/free-solid-svg-icons");
+/* harmony import */ var _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_3__);
 var _jsxFileName = "/home/ben/Projects/ColdFusion_Media/coldfusion_media-marketing-site/frontend/components/ui/icon/icon.tsx";
+
+
 
 
 var Icons;
@@ -1387,7 +1393,7 @@ var Icon = function Icon(props) {
     className: props.scale,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 19
     },
     __self: this
   });
@@ -1396,17 +1402,17 @@ var Icon = function Icon(props) {
     className: props.scale,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 23
     },
     __self: this
   });
-  return react__WEBPACK_IMPORTED_MODULE_0__["createElement"](StyledImage, {
-    src: icon.path,
-    alt: icon.altText,
-    className: props.scale,
+  return react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_2__["FontAwesomeIcon"], {
+    icon: icon,
+    size: props.scale,
+    color: "white",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22
+      lineNumber: 25
     },
     __self: this
   });
@@ -1415,18 +1421,10 @@ var Icon = function Icon(props) {
 var getIcon = function getIcon(iconName) {
   switch (iconName) {
     case Icons.laptopCodeSolid:
-      return {
-        key: Icons.laptopCodeSolid,
-        path: '/static/assets/icons/laptop-code-solid.svg',
-        altText: 'Icon showing laptop with code symbol on screen'
-      };
+      return _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_3__["faLaptopCode"];
 
     case Icons.chartLineSolid:
-      return {
-        key: Icons.chartLineSolid,
-        path: '/static/assets/icons/chart-line-solid.svg',
-        altText: 'Chart icon'
-      };
+      return _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_3__["faChartLine"];
 
     default:
       return null;
@@ -1436,11 +1434,7 @@ var getIcon = function getIcon(iconName) {
 var IconPlaceholder = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div.withConfig({
   displayName: "icon__IconPlaceholder",
   componentId: "sc-1wjnthp-0"
-})(["background-color:rgba(0,0,0,.3);border-radius:50%;&.x1{--size:30px;width:var(--size);min-width:var(--size);max-width:var(--size);height:var(--size);min-height:var(--size);max-height:var(--size);}&.x2{--size:60px;width:var(--size);min-width:var(--size);max-width:var(--size);height:var(--size);min-height:var(--size);max-height:var(--size);}"]);
-var StyledImage = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.img.withConfig({
-  displayName: "icon__StyledImage",
-  componentId: "sc-1wjnthp-1"
-})(["fill:white;&.x1{--size:30px;width:var(--size);min-width:var(--size);max-width:var(--size);height:var(--size);min-height:var(--size);max-height:var(--size);}&.x2{--size:60px;width:var(--size);min-width:var(--size);max-width:var(--size);height:var(--size);min-height:var(--size);max-height:var(--size);}"]);
+})(["background-color:rgba(0,0,0,.3);border-radius:50%;&.1x{--size:30px;width:var(--size);min-width:var(--size);max-width:var(--size);height:var(--size);min-height:var(--size);max-height:var(--size);}&.2x{--size:60px;width:var(--size);min-width:var(--size);max-width:var(--size);height:var(--size);min-height:var(--size);max-height:var(--size);}"]);
 /* harmony default export */ __webpack_exports__["default"] = (Icon);
 
 
@@ -1860,6 +1854,28 @@ var post = function post(url, data) {
 
 module.exports = __webpack_require__(/*! /home/ben/Projects/ColdFusion_Media/coldfusion_media-marketing-site/frontend/pages/index.tsx */"./pages/index.tsx");
 
+
+/***/ }),
+
+/***/ "@fortawesome/free-solid-svg-icons":
+/*!****************************************************!*\
+  !*** external "@fortawesome/free-solid-svg-icons" ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@fortawesome/free-solid-svg-icons");
+
+/***/ }),
+
+/***/ "@fortawesome/react-fontawesome":
+/*!*************************************************!*\
+  !*** external "@fortawesome/react-fontawesome" ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@fortawesome/react-fontawesome");
 
 /***/ }),
 
