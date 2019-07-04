@@ -19,7 +19,7 @@ const HomePageServices: FunctionComponent = () => (
 
         <HomePageService
             title="Social Media Marketing"
-            shortBody="We can ensure your next social media marketing campmaign is a sucess, either by advising on the execution of existing plans and campains or designing a slick new capmaign tailored to your target audience."/>
+            shortBody="We can ensure your next social media marketing campmaign is a sucess, either by advising on the execution of existing plans and campains or designing a slick new campaign tailored to your target audience."/>
 
         <HomePageService
             title="Photo & Video"

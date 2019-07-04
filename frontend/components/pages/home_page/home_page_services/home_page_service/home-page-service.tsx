@@ -25,10 +25,10 @@ const HomePageService: FunctionComponent<IHomePageServiceProps> = props => (
 const HomePageServiceWrapper = styled.div`
     width: 20%;
     height: 50%;
-    padding: 1rem;
+    padding: 2rem 1rem 1rem 1rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
     border: 1px solid white;
     background-color: rgba(0, 0, 0, 0);

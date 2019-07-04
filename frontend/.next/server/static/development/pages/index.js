@@ -1184,7 +1184,7 @@ var HomePageServices = function HomePageServices() {
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_home_page_service__WEBPACK_IMPORTED_MODULE_2__["default"], {
     title: "Social Media Marketing",
-    shortBody: "We can ensure your next social media marketing campmaign is a sucess, either by advising on the execution of existing plans and campains or designing a slick new capmaign tailored to your target audience.",
+    shortBody: "We can ensure your next social media marketing campmaign is a sucess, either by advising on the execution of existing plans and campains or designing a slick new campaign tailored to your target audience.",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 20
@@ -1267,7 +1267,7 @@ var HomePageService = function HomePageService(props) {
 var HomePageServiceWrapper = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div.withConfig({
   displayName: "home-page-service__HomePageServiceWrapper",
   componentId: "o3u8fd-0"
-})(["width:20%;height:50%;padding:1rem;display:flex;flex-direction:column;justify-content:space-around;align-items:center;border:1px solid white;background-color:rgba(0,0,0,0);border-radius:8px;color:white;font-size:var(--font-size-s);"]);
+})(["width:20%;height:50%;padding:2rem 1rem 1rem 1rem;display:flex;flex-direction:column;justify-content:flex-start;align-items:center;border:1px solid white;background-color:rgba(0,0,0,0);border-radius:8px;color:white;font-size:var(--font-size-s);"]);
 var HomePageServiceHeading = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div.withConfig({
   displayName: "home-page-service__HomePageServiceHeading",
   componentId: "o3u8fd-1"
