@@ -1390,7 +1390,7 @@ var Icons;
 
 var Icon = function Icon(props) {
   if (typeof props.iconName === 'undefined') return react__WEBPACK_IMPORTED_MODULE_0__["createElement"](IconPlaceholder, {
-    className: props.scale,
+    className: props.scale === '2x' ? 'x2' : 'x1',
     __source: {
       fileName: _jsxFileName,
       lineNumber: 19
@@ -1399,7 +1399,7 @@ var Icon = function Icon(props) {
   });
   var icon = getIcon(props.iconName);
   if (!icon) return react__WEBPACK_IMPORTED_MODULE_0__["createElement"](IconPlaceholder, {
-    className: props.scale,
+    className: props.scale === '2x' ? 'x2' : 'x1',
     __source: {
       fileName: _jsxFileName,
       lineNumber: 23
@@ -1434,7 +1434,7 @@ var getIcon = function getIcon(iconName) {
 var IconPlaceholder = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div.withConfig({
   displayName: "icon__IconPlaceholder",
   componentId: "sc-1wjnthp-0"
-})(["background-color:rgba(0,0,0,.3);border-radius:50%;&.1x{--size:30px;width:var(--size);min-width:var(--size);max-width:var(--size);height:var(--size);min-height:var(--size);max-height:var(--size);}&.2x{--size:60px;width:var(--size);min-width:var(--size);max-width:var(--size);height:var(--size);min-height:var(--size);max-height:var(--size);}"]);
+})(["background-color:rgba(0,0,0,.3);border-radius:50%;&.x1{--size:30px;width:var(--size);min-width:var(--size);max-width:var(--size);height:var(--size);min-height:var(--size);max-height:var(--size);}&.x2{--size:60px;width:var(--size);min-width:var(--size);max-width:var(--size);height:var(--size);min-height:var(--size);max-height:var(--size);}"]);
 /* harmony default export */ __webpack_exports__["default"] = (Icon);
 
 

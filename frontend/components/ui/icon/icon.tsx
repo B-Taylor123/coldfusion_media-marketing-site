@@ -16,11 +16,11 @@ interface IIconProps {
 }
 
 const Icon: FunctionComponent<IIconProps> = props => {
-    if (typeof props.iconName === 'undefined') return(<IconPlaceholder className={ props.scale }/>);
+    if (typeof props.iconName === 'undefined') return(<IconPlaceholder className={ props.scale === '2x' ? 'x2' : 'x1' }/>);
 
     const icon = getIcon(props.iconName);
 
-    if (!icon) return(<IconPlaceholder className={ props.scale }/>);
+    if (!icon) return(<IconPlaceholder className={ props.scale === '2x' ? 'x2' : 'x1' }/>);
 
     return(<FontAwesomeIcon icon={ icon } size={ props.scale } color="white"/>);
 };
@@ -39,7 +39,7 @@ const getIcon = (iconName: Icons): IconDefinition => {
 const IconPlaceholder = styled.div`
     background-color: rgba(0, 0, 0, .3);
     border-radius: 50%;
-    &.1x {
+    &.x1 {
         --size: 30px;
         width: var(--size);
         min-width: var(--size);
@@ -48,7 +48,7 @@ const IconPlaceholder = styled.div`
         min-height: var(--size);
         max-height: var(--size);
     }
-    &.2x {
+    &.x2 {
         --size: 60px;
         width: var(--size);
         min-width: var(--size);
