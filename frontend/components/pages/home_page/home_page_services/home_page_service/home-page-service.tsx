@@ -40,7 +40,7 @@ const HomePageServiceWrapper = styled.div`
 
 const HomePageServiceHeading = styled.div`
     width: 100%;
-    height: 40%;
+    height: 35%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;

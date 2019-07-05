@@ -7,6 +7,7 @@ import { post } from '../../../../../services/http-service';
 import FormRow from './form_row';
 import FormInput from './form_input';
 import Button from '../../../../ui/button';
+import FormTextArea from './form_textarea';
 
 interface IContactFormField<T> {
     value: T;
@@ -59,7 +60,7 @@ const ContactForm: FunctionComponent = () => {
             </FormRow>
 
             <FormRow>
-                <FormInput type="text" placeholder="Message*" value={ contactForm.message.value } onChange={ e => updateContactFormState(e.currentTarget.value, 'message', contactForm, setContactFormState) }/>
+                <FormTextArea rows={ 5 } maxLength={ 4000 } placeholder="Message*" value={ contactForm.message.value } onChange={ e => updateContactFormState(e.currentTarget.value, 'message', contactForm, setContactFormState) }/>
             </FormRow>
 
             <FormRow>

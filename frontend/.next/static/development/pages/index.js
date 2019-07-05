@@ -261,9 +261,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _form_row__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./form_row */ "./components/pages/home_page/home_page_contact/contact_form/form_row/index.ts");
 /* harmony import */ var _form_input__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./form_input */ "./components/pages/home_page/home_page_contact/contact_form/form_input/index.ts");
 /* harmony import */ var _ui_button__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../../ui/button */ "./components/ui/button/index.ts");
+/* harmony import */ var _form_textarea__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./form_textarea */ "./components/pages/home_page/home_page_contact/contact_form/form_textarea/index.ts");
 
 
 var _jsxFileName = "/home/ben/Projects/ColdFusion_Media/coldfusion_media-marketing-site/frontend/components/pages/home_page/home_page_contact/contact_form/contact-form.tsx";
+
 
 
 
@@ -306,26 +308,26 @@ var ContactForm = function ContactForm() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38
+      lineNumber: 39
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_form_row__WEBPACK_IMPORTED_MODULE_5__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 40
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_2__["createElement"]("h2", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40
+      lineNumber: 41
     },
     __self: this
   }, " Get in touch ")), react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_form_row__WEBPACK_IMPORTED_MODULE_5__["default"], {
     doubleItemRow: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43
+      lineNumber: 44
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_form_input__WEBPACK_IMPORTED_MODULE_6__["default"], {
@@ -337,7 +339,7 @@ var ContactForm = function ContactForm() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44
+      lineNumber: 45
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_form_input__WEBPACK_IMPORTED_MODULE_6__["default"], {
@@ -349,13 +351,13 @@ var ContactForm = function ContactForm() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45
+      lineNumber: 46
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_form_row__WEBPACK_IMPORTED_MODULE_5__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48
+      lineNumber: 49
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_form_input__WEBPACK_IMPORTED_MODULE_6__["default"], {
@@ -367,14 +369,14 @@ var ContactForm = function ContactForm() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49
+      lineNumber: 50
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_form_row__WEBPACK_IMPORTED_MODULE_5__["default"], {
     doubleItemRow: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52
+      lineNumber: 53
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_form_input__WEBPACK_IMPORTED_MODULE_6__["default"], {
@@ -386,7 +388,7 @@ var ContactForm = function ContactForm() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53
+      lineNumber: 54
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_form_input__WEBPACK_IMPORTED_MODULE_6__["default"], {
@@ -398,13 +400,13 @@ var ContactForm = function ContactForm() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 54
+      lineNumber: 55
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_form_row__WEBPACK_IMPORTED_MODULE_5__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 57
+      lineNumber: 58
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_form_input__WEBPACK_IMPORTED_MODULE_6__["default"], {
@@ -416,17 +418,18 @@ var ContactForm = function ContactForm() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 58
+      lineNumber: 59
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_form_row__WEBPACK_IMPORTED_MODULE_5__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 61
+      lineNumber: 62
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_form_input__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    type: "text",
+  }, react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_form_textarea__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    rows: 5,
+    maxLength: 4000,
     placeholder: "Message*",
     value: contactForm.message.value,
     onChange: function onChange(e) {
@@ -434,20 +437,20 @@ var ContactForm = function ContactForm() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 62
+      lineNumber: 63
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_form_row__WEBPACK_IMPORTED_MODULE_5__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 65
+      lineNumber: 66
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_ui_button__WEBPACK_IMPORTED_MODULE_7__["default"], {
     type: "submit",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 66
+      lineNumber: 67
     },
     __self: this
   }, " Submit ")));
@@ -578,6 +581,57 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _form_row__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./form-row */ "./components/pages/home_page/home_page_contact/contact_form/form_row/form-row.tsx");
 
 /* harmony default export */ __webpack_exports__["default"] = (_form_row__WEBPACK_IMPORTED_MODULE_0__["default"]);
+
+/***/ }),
+
+/***/ "./components/pages/home_page/home_page_contact/contact_form/form_textarea/form-textarea.tsx":
+/*!***************************************************************************************************!*\
+  !*** ./components/pages/home_page/home_page_contact/contact_form/form_textarea/form-textarea.tsx ***!
+  \***************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/extends */ "./node_modules/@babel/runtime-corejs2/helpers/esm/extends.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+
+var _jsxFileName = "/home/ben/Projects/ColdFusion_Media/coldfusion_media-marketing-site/frontend/components/pages/home_page/home_page_contact/contact_form/form_textarea/form-textarea.tsx";
+
+
+
+var FormTextArea = function FormTextArea(props) {
+  return react__WEBPACK_IMPORTED_MODULE_1__["createElement"](TextArea, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, props, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
+    },
+    __self: this
+  }));
+};
+
+var TextArea = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].textarea.withConfig({
+  displayName: "form-textarea__TextArea",
+  componentId: "xctsc5-0"
+})(["width:100%;padding:5px 10px 5px 10px;border:1px solid white;background-color:rgba(0,0,0,0);border-radius:4px;color:white;font-size:var(--font-size-m);"]);
+/* harmony default export */ __webpack_exports__["default"] = (FormTextArea);
+
+/***/ }),
+
+/***/ "./components/pages/home_page/home_page_contact/contact_form/form_textarea/index.ts":
+/*!******************************************************************************************!*\
+  !*** ./components/pages/home_page/home_page_contact/contact_form/form_textarea/index.ts ***!
+  \******************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _form_textarea__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./form-textarea */ "./components/pages/home_page/home_page_contact/contact_form/form_textarea/form-textarea.tsx");
+
+/* harmony default export */ __webpack_exports__["default"] = (_form_textarea__WEBPACK_IMPORTED_MODULE_0__["default"]);
 
 /***/ }),
 
@@ -1166,7 +1220,7 @@ var HomePageServiceWrapper = styled_components__WEBPACK_IMPORTED_MODULE_1__["def
 var HomePageServiceHeading = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
   displayName: "home-page-service__HomePageServiceHeading",
   componentId: "o3u8fd-1"
-})(["width:100%;height:40%;display:flex;flex-direction:column;justify-content:flex-start;align-items:center;font-size:var(--font-size-m);h3{text-align:center}"]);
+})(["width:100%;height:35%;display:flex;flex-direction:column;justify-content:flex-start;align-items:center;font-size:var(--font-size-m);h3{text-align:center}"]);
 /* harmony default export */ __webpack_exports__["default"] = (HomePageService);
 
 /***/ }),
