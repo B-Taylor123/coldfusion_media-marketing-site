@@ -792,7 +792,7 @@ var DesktopScrollIndicator = function DesktopScrollIndicator() {
   return react__WEBPACK_IMPORTED_MODULE_0__["createElement"](Mouse, {
     xmlns: "http://www.w3.org/2000/svg",
     viewBox: "0 0 76 130",
-    preserveAspectRatio: "xMidYmid meet",
+    preserveAspectRatio: "xMidYMid meet",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 6
@@ -1061,7 +1061,7 @@ var HomePageServices = function HomePageServices() {
   }, react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_home_page_service__WEBPACK_IMPORTED_MODULE_2__["default"], {
     title: "Software Development",
     shortBody: "We have a wealth of commercial experiance creating everything from promotional websites to enterprise grade web applications and mobile apps which we can apply to creating your perfect application.",
-    iconName: _ui_icon__WEBPACK_IMPORTED_MODULE_3__["Icons"].laptopCodeSolid,
+    iconName: _ui_icon__WEBPACK_IMPORTED_MODULE_3__["Icons"].laptopCode,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 10
@@ -1070,7 +1070,7 @@ var HomePageServices = function HomePageServices() {
   }), react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_home_page_service__WEBPACK_IMPORTED_MODULE_2__["default"], {
     title: "Process Refinement",
     shortBody: "We can analyze your business or manufacturing processes and advise you on the most meaningful optimisations and automations and where apropriate craft bespoke software and hardware to... [WHAT WILL IT DO]",
-    iconName: _ui_icon__WEBPACK_IMPORTED_MODULE_3__["Icons"].chartLineSolid,
+    iconName: _ui_icon__WEBPACK_IMPORTED_MODULE_3__["Icons"].chartLine,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 15
@@ -1078,7 +1078,8 @@ var HomePageServices = function HomePageServices() {
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_home_page_service__WEBPACK_IMPORTED_MODULE_2__["default"], {
     title: "Social Media Marketing",
-    shortBody: "We can ensure your next social media marketing campmaign is a sucess, either by advising on the execution of existing plans and campains or designing a slick new campaign tailored to your target audience.",
+    shortBody: "We can ensure your next social media marketing campmaign is a success, either by advising on the execution of existing plans and campains or designing a slick new campaign tailored to your target audience.",
+    iconName: _ui_icon__WEBPACK_IMPORTED_MODULE_3__["Icons"].ad,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 20
@@ -1087,9 +1088,10 @@ var HomePageServices = function HomePageServices() {
   }), react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_home_page_service__WEBPACK_IMPORTED_MODULE_2__["default"], {
     title: "Photo & Video",
     shortBody: "We can provide anything from product photgraphy, corporate headshots and real estate photgraphy to... [VIDEO PRODUCTS]",
+    iconName: _ui_icon__WEBPACK_IMPORTED_MODULE_3__["Icons"].camera,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24
+      lineNumber: 25
     },
     __self: this
   }));
@@ -1160,11 +1162,11 @@ var HomePageService = function HomePageService(props) {
 var HomePageServiceWrapper = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
   displayName: "home-page-service__HomePageServiceWrapper",
   componentId: "o3u8fd-0"
-})(["width:20%;height:50%;padding:2rem 1rem 1rem 1rem;display:flex;flex-direction:column;justify-content:flex-start;align-items:center;border:1px solid white;background-color:rgba(0,0,0,0);border-radius:8px;color:white;font-size:var(--font-size-s);"]);
+})(["width:20%;height:50%;max-height:500px;padding:2rem 1rem 1rem 1rem;display:flex;flex-direction:column;justify-content:flex-start;align-items:center;border:1px solid white;background-color:rgba(0,0,0,0);border-radius:8px;color:white;font-size:var(--font-size-s);"]);
 var HomePageServiceHeading = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
   displayName: "home-page-service__HomePageServiceHeading",
   componentId: "o3u8fd-1"
-})(["width:100%;height:30%;display:flex;flex-direction:column;justify-content:space-around;align-items:center;font-size:var(--font-size-m);h3{text-align:center}"]);
+})(["width:100%;height:40%;display:flex;flex-direction:column;justify-content:flex-start;align-items:center;font-size:var(--font-size-m);h3{text-align:center}"]);
 /* harmony default export */ __webpack_exports__["default"] = (HomePageService);
 
 /***/ }),
@@ -1273,8 +1275,10 @@ var _jsxFileName = "/home/ben/Projects/ColdFusion_Media/coldfusion_media-marketi
 var Icons;
 
 (function (Icons) {
-  Icons[Icons["laptopCodeSolid"] = 0] = "laptopCodeSolid";
-  Icons[Icons["chartLineSolid"] = 1] = "chartLineSolid";
+  Icons[Icons["laptopCode"] = 0] = "laptopCode";
+  Icons[Icons["chartLine"] = 1] = "chartLine";
+  Icons[Icons["camera"] = 2] = "camera";
+  Icons[Icons["ad"] = 3] = "ad";
 })(Icons || (Icons = {}));
 
 var Icon = function Icon(props) {
@@ -1282,7 +1286,7 @@ var Icon = function Icon(props) {
     className: props.scale === '2x' ? 'x2' : 'x1',
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 21
     },
     __self: this
   });
@@ -1291,7 +1295,7 @@ var Icon = function Icon(props) {
     className: props.scale === '2x' ? 'x2' : 'x1',
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 25
     },
     __self: this
   });
@@ -1301,7 +1305,7 @@ var Icon = function Icon(props) {
     color: "white",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25
+      lineNumber: 27
     },
     __self: this
   });
@@ -1309,11 +1313,17 @@ var Icon = function Icon(props) {
 
 var getIcon = function getIcon(iconName) {
   switch (iconName) {
-    case Icons.laptopCodeSolid:
+    case Icons.laptopCode:
       return _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_3__["faLaptopCode"];
 
-    case Icons.chartLineSolid:
+    case Icons.chartLine:
       return _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_3__["faChartLine"];
+
+    case Icons.camera:
+      return _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_3__["faCamera"];
+
+    case Icons.ad:
+      return _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_3__["faAd"];
 
     default:
       return null;

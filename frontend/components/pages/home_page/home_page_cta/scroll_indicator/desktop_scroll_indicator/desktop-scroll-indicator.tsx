@@ -3,7 +3,7 @@ import { FunctionComponent } from 'react';
 import styled, { keyframes } from 'styled-components';
 
 const DesktopScrollIndicator: FunctionComponent = () => (
-    <Mouse xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76 130" preserveAspectRatio="xMidYmid meet">
+    <Mouse xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76 130" preserveAspectRatio="xMidYMid meet">
         <g fill="none" fillRule="evenodd">
             <rect width="70" height="118" x="1.5" y="1.5" stroke="#FFF" strokeWidth="3" rx="36"/>
             <MouseScroll cx="36.5" cy="31.5" r="4.5" fill="#FFF"/>

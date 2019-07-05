@@ -28,7 +28,9 @@ class MyDocument extends Document {
   render() {
     return (
       <Html>
-        <Head/>
+        <Head>
+          <link rel="shortcut icon" type="image/png" href="/static/favicon.ico"/>
+        </Head>
         <body>
           <GlobalStyles/>
           <Main />

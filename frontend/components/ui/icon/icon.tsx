@@ -3,11 +3,13 @@ import { FunctionComponent } from 'react';
 import styled from 'styled-components';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLaptopCode, faChartLine, IconDefinition } from '@fortawesome/free-solid-svg-icons';
+import { faLaptopCode, faChartLine, faCamera, faAd, IconDefinition } from '@fortawesome/free-solid-svg-icons';
 
 enum Icons {
-    laptopCodeSolid,
-    chartLineSolid
+    laptopCode,
+    chartLine,
+    camera,
+    ad
 }
 
 interface IIconProps {
@@ -27,10 +29,14 @@ const Icon: FunctionComponent<IIconProps> = props => {
 
 const getIcon = (iconName: Icons): IconDefinition => {
     switch (iconName) {
-        case Icons.laptopCodeSolid:
+        case Icons.laptopCode:
             return faLaptopCode;
-        case Icons.chartLineSolid:
+        case Icons.chartLine:
             return faChartLine;
+        case Icons.camera:
+            return faCamera;
+        case Icons.ad:
+            return faAd;
         default:
             return null;
     }

@@ -2390,28 +2390,37 @@ function (_Document) {
           lineNumber: 31
         },
         __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("body", {
+      }, react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("link", {
+        rel: "shortcut icon",
+        type: "image/png",
+        href: "/static/favicon.ico",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 32
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(GlobalStyles, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 33
-        },
-        __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_11__["Main"], {
+      })), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("body", {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 34
         },
         __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_11__["NextScript"], {
+      }, react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(GlobalStyles, {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 35
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_11__["Main"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 36
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_11__["NextScript"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 37
         },
         __self: this
       })));

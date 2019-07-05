@@ -25,6 +25,7 @@ const HomePageService: FunctionComponent<IHomePageServiceProps> = props => (
 const HomePageServiceWrapper = styled.div`
     width: 20%;
     height: 50%;
+    max-height: 500px;
     padding: 2rem 1rem 1rem 1rem;
     display: flex;
     flex-direction: column;
@@ -39,10 +40,10 @@ const HomePageServiceWrapper = styled.div`
 
 const HomePageServiceHeading = styled.div`
     width: 100%;
-    height: 30%;
+    height: 40%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
     font-size: var(--font-size-m);
     h3 {
