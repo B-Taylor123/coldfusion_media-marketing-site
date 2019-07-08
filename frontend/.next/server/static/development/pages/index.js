@@ -382,6 +382,12 @@ var ContactForm = function ContactForm() {
     email: {
       value: ''
     },
+    mobile: {
+      value: ''
+    },
+    landline: {
+      value: ''
+    },
     role: {
       value: ''
     },
@@ -405,26 +411,26 @@ var ContactForm = function ContactForm() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 43
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_form_row__WEBPACK_IMPORTED_MODULE_5__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40
+      lineNumber: 44
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_2__["createElement"]("h2", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 45
     },
     __self: this
   }, " Get in touch ")), react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_form_row__WEBPACK_IMPORTED_MODULE_5__["default"], {
     doubleItemRow: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44
+      lineNumber: 48
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_form_input__WEBPACK_IMPORTED_MODULE_6__["default"], {
@@ -436,7 +442,7 @@ var ContactForm = function ContactForm() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45
+      lineNumber: 49
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_form_input__WEBPACK_IMPORTED_MODULE_6__["default"], {
@@ -448,13 +454,13 @@ var ContactForm = function ContactForm() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46
+      lineNumber: 50
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_form_row__WEBPACK_IMPORTED_MODULE_5__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49
+      lineNumber: 53
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_form_input__WEBPACK_IMPORTED_MODULE_6__["default"], {
@@ -466,14 +472,50 @@ var ContactForm = function ContactForm() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50
+      lineNumber: 54
+    },
+    __self: this
+  })), react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_form_row__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 57
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_form_input__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    type: "tel",
+    placeholder: "Mobile",
+    value: contactForm.mobile.value,
+    onChange: function onChange(e) {
+      return updateContactFormState(e.currentTarget.value, 'mobile', contactForm, setContactFormState);
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 58
+    },
+    __self: this
+  })), react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_form_row__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 61
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_form_input__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    type: "tel",
+    placeholder: "Landline",
+    value: contactForm.landline.value,
+    onChange: function onChange(e) {
+      return updateContactFormState(e.currentTarget.value, 'landline', contactForm, setContactFormState);
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 62
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_form_row__WEBPACK_IMPORTED_MODULE_5__["default"], {
     doubleItemRow: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53
+      lineNumber: 65
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_form_input__WEBPACK_IMPORTED_MODULE_6__["default"], {
@@ -485,7 +527,7 @@ var ContactForm = function ContactForm() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 54
+      lineNumber: 66
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_form_input__WEBPACK_IMPORTED_MODULE_6__["default"], {
@@ -497,13 +539,13 @@ var ContactForm = function ContactForm() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 55
+      lineNumber: 67
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_form_row__WEBPACK_IMPORTED_MODULE_5__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 58
+      lineNumber: 70
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_form_input__WEBPACK_IMPORTED_MODULE_6__["default"], {
@@ -515,13 +557,13 @@ var ContactForm = function ContactForm() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 59
+      lineNumber: 71
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_form_row__WEBPACK_IMPORTED_MODULE_5__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 62
+      lineNumber: 74
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_form_textarea__WEBPACK_IMPORTED_MODULE_8__["default"], {
@@ -534,20 +576,20 @@ var ContactForm = function ContactForm() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 63
+      lineNumber: 75
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_form_row__WEBPACK_IMPORTED_MODULE_5__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 66
+      lineNumber: 78
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_ui_button__WEBPACK_IMPORTED_MODULE_7__["default"], {
     type: "submit",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 67
+      lineNumber: 79
     },
     __self: this
   }, " Submit ")));
@@ -1042,29 +1084,16 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral */ "./node_modules/@babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "styled-components");
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_2__);
-
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "styled-components");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_1__);
 var _jsxFileName = "/home/ben/Projects/ColdFusion_Media/coldfusion_media-marketing-site/frontend/components/pages/home_page/home_page_cta/scroll_indicator/mobile_scroll_indicator/mobile-scroll-indicator.tsx";
-
-function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    0%, 20% {\n        transform: translateY(0) scaleY(1);\n    }\n\n    10% {\n        opacity: 1;\n    }\n\n    100% {\n        transform: translateY(36px) scaleY(2);\n        opacity: 0.01;\n    }\n"]);
-
-  _templateObject = function _templateObject() {
-    return data;
-  };
-
-  return data;
-}
-
 
 
 
 var MobileScrollIndicator = function MobileScrollIndicator() {
-  return react__WEBPACK_IMPORTED_MODULE_1__["createElement"](Mouse, {
+  return react__WEBPACK_IMPORTED_MODULE_0__["createElement"](Mouse, {
     xmlns: "http://www.w3.org/2000/svg",
     viewBox: "0 0 76 130",
     preserveAspectRatio: "xMidYmid meet",
@@ -1073,7 +1102,7 @@ var MobileScrollIndicator = function MobileScrollIndicator() {
       lineNumber: 6
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1__["createElement"]("g", {
+  }, react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("g", {
     fill: "none",
     fillRule: "evenodd",
     __source: {
@@ -1081,7 +1110,7 @@ var MobileScrollIndicator = function MobileScrollIndicator() {
       lineNumber: 7
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1__["createElement"]("rect", {
+  }, react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("rect", {
     width: "70",
     height: "118",
     x: "1.5",
@@ -1094,7 +1123,7 @@ var MobileScrollIndicator = function MobileScrollIndicator() {
       lineNumber: 8
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_1__["createElement"](MouseScroll, {
+  }), react__WEBPACK_IMPORTED_MODULE_0__["createElement"](MouseScroll, {
     cx: "36.5",
     cy: "31.5",
     r: "4.5",
@@ -1107,12 +1136,12 @@ var MobileScrollIndicator = function MobileScrollIndicator() {
   })));
 };
 
-var Mouse = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.svg.withConfig({
+var Mouse = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.svg.withConfig({
   displayName: "mobile-scroll-indicator__Mouse",
   componentId: "rmmt53-0"
 })(["max-width:2.5rem;width:100%;height:auto;"]);
-var scroll = Object(styled_components__WEBPACK_IMPORTED_MODULE_2__["keyframes"])(_templateObject());
-var MouseScroll = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.circle.withConfig({
+var scroll = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["keyframes"])(["0%,20%{transform:translateY(0) scaleY(1);}10%{opacity:1;}100%{transform:translateY(36px) scaleY(2);opacity:0.01;}"]);
+var MouseScroll = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.circle.withConfig({
   displayName: "mobile-scroll-indicator__MouseScroll",
   componentId: "rmmt53-1"
 })(["animation-name:", ";animation-duration:1.5s;animation-timing-function:cubic-bezier(0.650,-0.550,0.250,1.500);animation-iteration-count:infinite;transform-origin:50% 20.5px;will-change:transform;"], scroll);
@@ -1556,17 +1585,6 @@ module.exports = __webpack_require__(/*! core-js/library/fn/object/assign */ "co
 
 /***/ }),
 
-/***/ "./node_modules/@babel/runtime-corejs2/core-js/object/define-properties.js":
-/*!*********************************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs2/core-js/object/define-properties.js ***!
-  \*********************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(/*! core-js/library/fn/object/define-properties */ "core-js/library/fn/object/define-properties");
-
-/***/ }),
-
 /***/ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js":
 /*!*******************************************************************************!*\
   !*** ./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js ***!
@@ -1575,17 +1593,6 @@ module.exports = __webpack_require__(/*! core-js/library/fn/object/define-proper
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(/*! core-js/library/fn/object/define-property */ "core-js/library/fn/object/define-property");
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime-corejs2/core-js/object/freeze.js":
-/*!**********************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs2/core-js/object/freeze.js ***!
-  \**********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(/*! core-js/library/fn/object/freeze */ "core-js/library/fn/object/freeze");
 
 /***/ }),
 
@@ -1826,36 +1833,6 @@ function _slicedToArray(arr, i) {
 
 /***/ }),
 
-/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral.js":
-/*!**********************************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral.js ***!
-  \**********************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _taggedTemplateLiteral; });
-/* harmony import */ var _core_js_object_define_properties__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/object/define-properties */ "./node_modules/@babel/runtime-corejs2/core-js/object/define-properties.js");
-/* harmony import */ var _core_js_object_define_properties__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_define_properties__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _core_js_object_freeze__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../core-js/object/freeze */ "./node_modules/@babel/runtime-corejs2/core-js/object/freeze.js");
-/* harmony import */ var _core_js_object_freeze__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_freeze__WEBPACK_IMPORTED_MODULE_1__);
-
-
-function _taggedTemplateLiteral(strings, raw) {
-  if (!raw) {
-    raw = strings.slice(0);
-  }
-
-  return _core_js_object_freeze__WEBPACK_IMPORTED_MODULE_1___default()(_core_js_object_define_properties__WEBPACK_IMPORTED_MODULE_0___default()(strings, {
-    raw: {
-      value: _core_js_object_freeze__WEBPACK_IMPORTED_MODULE_1___default()(raw)
-    }
-  }));
-}
-
-/***/ }),
-
 /***/ "./pages/index.tsx":
 /*!*************************!*\
   !*** ./pages/index.tsx ***!
@@ -1988,17 +1965,6 @@ module.exports = require("core-js/library/fn/object/assign");
 
 /***/ }),
 
-/***/ "core-js/library/fn/object/define-properties":
-/*!**************************************************************!*\
-  !*** external "core-js/library/fn/object/define-properties" ***!
-  \**************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("core-js/library/fn/object/define-properties");
-
-/***/ }),
-
 /***/ "core-js/library/fn/object/define-property":
 /*!************************************************************!*\
   !*** external "core-js/library/fn/object/define-property" ***!
@@ -2007,17 +1973,6 @@ module.exports = require("core-js/library/fn/object/define-properties");
 /***/ (function(module, exports) {
 
 module.exports = require("core-js/library/fn/object/define-property");
-
-/***/ }),
-
-/***/ "core-js/library/fn/object/freeze":
-/*!***************************************************!*\
-  !*** external "core-js/library/fn/object/freeze" ***!
-  \***************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("core-js/library/fn/object/freeze");
 
 /***/ }),
 

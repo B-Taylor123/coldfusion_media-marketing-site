@@ -18,6 +18,8 @@ interface IContactForm {
     firstName: IContactFormField<string>;
     lastName: IContactFormField<string>;
     email: IContactFormField<string>;
+    mobile: IContactFormField<string>;
+    landline: IContactFormField<string>;
     role: IContactFormField<string>;
     companyName: IContactFormField<string>;
     companyWebsite: IContactFormField<string>;
@@ -29,6 +31,8 @@ const ContactForm: FunctionComponent = () => {
         firstName: { value: '' },
         lastName: { value: '' },
         email: { value: '' },
+        mobile: { value: '' },
+        landline: { value: '' },
         role: { value: '' },
         companyName: { value: '' },
         companyWebsite: { value: '' },
@@ -48,6 +52,14 @@ const ContactForm: FunctionComponent = () => {
 
             <FormRow>
                 <FormInput type="email" placeholder="Email*" value={ contactForm.email.value } onChange={ e => updateContactFormState(e.currentTarget.value, 'email', contactForm, setContactFormState) }/>
+            </FormRow>
+
+            <FormRow>
+                <FormInput type="tel" placeholder="Mobile" value={ contactForm.mobile.value } onChange={ e => updateContactFormState(e.currentTarget.value, 'mobile', contactForm, setContactFormState) }/>
+            </FormRow>
+
+            <FormRow>
+                <FormInput type="tel" placeholder="Landline" value={ contactForm.landline.value } onChange={ e => updateContactFormState(e.currentTarget.value, 'landline', contactForm, setContactFormState) }/>
             </FormRow>
 
             <FormRow doubleItemRow>

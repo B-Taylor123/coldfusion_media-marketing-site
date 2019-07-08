@@ -3,7 +3,7 @@ import { ChangeEvent, FunctionComponent } from 'react';
 import styled from 'styled-components';
 
 interface IFormInputProps {
-    type: 'text' | 'number' | 'email';
+    type: 'text' | 'number' | 'email' | 'tel';
     value: string;
     placeholder?: string;
     onChange?: (e: ChangeEvent<HTMLInputElement>) => void;
