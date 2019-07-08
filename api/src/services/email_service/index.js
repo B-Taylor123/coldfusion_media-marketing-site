@@ -1,7 +1,7 @@
 
 const express = require('express');
-const corsMiddleware = require('./middleware/cors-middleware');
-const sendEmail = require('./send-email');
+const corsMiddleware = require('./src/middleware/cors-middleware');
+const sendEmail = require('./src/send-email');
 
 const app = express();
 
