@@ -12,7 +12,7 @@ import HomePageContact from './home_page_contact';
 
 const HomePage: FunctionComponent = () => {
     return(
-        <Scrollbars style={{ width: '100%', height: '100%', overflow: 'hidden', display: 'flex', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'center' }} universal>
+        <Scrollbars style={{ width: '100%', height: '100%', overflow: 'hidden', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'flex-start' }} universal>
             {/* <HeaderBar/> */}
 
             <MainContentColumn>
@@ -38,6 +38,8 @@ const MainContentColumn = styled.div`
     width: 100%;
     height: auto;
     max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
 `;
 
 export default HomePage;

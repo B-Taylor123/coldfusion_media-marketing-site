@@ -174,8 +174,8 @@ var HomePage = function HomePage() {
       overflow: 'hidden',
       display: 'flex',
       flexDirection: 'column',
-      justifyContent: 'flex-start',
-      alignItems: 'center'
+      justifyContent: 'center',
+      alignItems: 'flex-start'
     },
     universal: true,
     __source: {
@@ -238,7 +238,7 @@ var HomePage = function HomePage() {
 var MainContentColumn = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
   displayName: "home-page__MainContentColumn",
   componentId: "sc-18cyjb5-0"
-})(["width:100%;height:auto;max-width:1920px;"]);
+})(["width:100%;height:auto;max-width:1920px;margin-left:auto;margin-right:auto;"]);
 /* harmony default export */ __webpack_exports__["default"] = (HomePage);
 
 /***/ }),
