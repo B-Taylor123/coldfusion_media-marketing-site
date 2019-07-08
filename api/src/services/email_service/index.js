@@ -8,7 +8,7 @@ const app = express();
 app.use(corsMiddleware);
 app.use(express.json());
 
-app.post('/email/contact', (req, res) => {
+app.post('/email/contact', async (req, res) => {
     const model = req.body;
 
     console.log('model', model);
@@ -20,7 +20,7 @@ app.post('/email/contact', (req, res) => {
     }
 
     // Call send email
-    const response = sendEmail(req.body);
+    const response = await sendEmail(req.body);
 
     // Return error if send email returns null
     if (response === null) {
@@ -35,7 +35,7 @@ app.post('/email/contact', (req, res) => {
 const isCreateEmailRequestValid = (model) => {
     const { firstName } = model;
 
-    if (typeof firstname === 'undefined' | firstName === null | firstName.length <= 0) return false;
+    if (typeof firstName === 'undefined' | firstName === null | firstName.length <= 0) return false;
 
     return true;
 };
