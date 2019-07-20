@@ -1,24 +1,23 @@
-import * as React from 'react';
-import { FunctionComponent } from 'react';
+import React, { FC } from 'react';
 import styled from 'styled-components';
 
 // import Icon from '../../../ui/icon';
 
-const Footer: FunctionComponent = () => {
-    return(
-        <StyledFooter>
-            <SocialIcons>
-                {/* <Icon scale="1x"/>
-                <Icon scale="1x"/>
-                <Icon scale="1x"/> */}
-            </SocialIcons>
+const CURRENT_YEAR = new Date().getFullYear();
 
-            <div>
-                &copy; 2019 Coldfusion Media
-            </div>
-        </StyledFooter>
-    );
-};
+const Footer: FC = () => (
+    <StyledFooter>
+        <SocialIcons>
+            {/* <Icon scale="1x"/>
+            <Icon scale="1x"/>
+            <Icon scale="1x"/> */}
+        </SocialIcons>
+
+        <div>
+            &copy; { CURRENT_YEAR } Coldfusion Media
+        </div>
+    </StyledFooter>
+);
 
 const StyledFooter = styled.footer`
     height: var(--footer-height);

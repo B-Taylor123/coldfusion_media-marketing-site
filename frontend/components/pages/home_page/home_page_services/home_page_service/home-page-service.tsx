@@ -25,6 +25,7 @@ const HomePageService: FunctionComponent<IHomePageServiceProps> = props => (
 const HomePageServiceWrapper = styled.div`
     width: 20%;
     height: 50%;
+    min-height: 450px;
     max-height: 500px;
     padding: 2rem 1rem 1rem 1rem;
     display: flex;

@@ -165,6 +165,56 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./components/layout/styled_elements/styled_h2/index.ts":
+/*!**************************************************************!*\
+  !*** ./components/layout/styled_elements/styled_h2/index.ts ***!
+  \**************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _styled_h2__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styled-h2 */ "./components/layout/styled_elements/styled_h2/styled-h2.tsx");
+
+/* harmony default export */ __webpack_exports__["default"] = (_styled_h2__WEBPACK_IMPORTED_MODULE_0__["default"]);
+
+/***/ }),
+
+/***/ "./components/layout/styled_elements/styled_h2/styled-h2.tsx":
+/*!*******************************************************************!*\
+  !*** ./components/layout/styled_elements/styled_h2/styled-h2.tsx ***!
+  \*******************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "styled-components");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "/home/ben/Projects/ColdFusion_Media/coldfusion_media-marketing-site/frontend/components/layout/styled_elements/styled_h2/styled-h2.tsx";
+
+
+
+var StyledH2 = function StyledH2(props) {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(H2, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }, props.children);
+};
+
+var H2 = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.h2.withConfig({
+  displayName: "styled-h2__H2",
+  componentId: "ebbfzp-0"
+})(["width:100%;text-align:center;font-size:var(--font-size-l);"]);
+/* harmony default export */ __webpack_exports__["default"] = (StyledH2);
+
+/***/ }),
+
 /***/ "./components/pages/base/footer/footer.tsx":
 /*!*************************************************!*\
   !*** ./components/pages/base/footer/footer.tsx ***!
@@ -182,26 +232,28 @@ var _jsxFileName = "/home/ben/Projects/ColdFusion_Media/coldfusion_media-marketi
 
  // import Icon from '../../../ui/icon';
 
+var CURRENT_YEAR = new Date().getFullYear();
+
 var Footer = function Footer() {
-  return react__WEBPACK_IMPORTED_MODULE_0__["createElement"](StyledFooter, {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledFooter, {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 9
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0__["createElement"](SocialIcons, {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(SocialIcons, {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 10
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 16
     },
     __self: this
-  }, "\xA9 2019 Coldfusion Media"));
+  }, "\xA9 ", CURRENT_YEAR, " Coldfusion Media"));
 };
 
 var StyledFooter = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.footer.withConfig({
@@ -359,9 +411,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _form_input__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./form_input */ "./components/pages/home_page/home_page_contact/contact_form/form_input/index.ts");
 /* harmony import */ var _ui_button__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../../ui/button */ "./components/ui/button/index.ts");
 /* harmony import */ var _form_textarea__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./form_textarea */ "./components/pages/home_page/home_page_contact/contact_form/form_textarea/index.ts");
+/* harmony import */ var _components_layout_styled_elements_styled_h2__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../../../../components/layout/styled_elements/styled_h2 */ "./components/layout/styled_elements/styled_h2/index.ts");
 
 
 var _jsxFileName = "/home/ben/Projects/ColdFusion_Media/coldfusion_media-marketing-site/frontend/components/pages/home_page/home_page_contact/contact_form/contact-form.tsx";
+
 
 
 
@@ -411,26 +465,26 @@ var ContactForm = function ContactForm() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43
+      lineNumber: 44
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_form_row__WEBPACK_IMPORTED_MODULE_5__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44
+      lineNumber: 45
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_2__["createElement"]("h2", {
+  }, react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_components_layout_styled_elements_styled_h2__WEBPACK_IMPORTED_MODULE_9__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45
+      lineNumber: 46
     },
     __self: this
   }, " Get in touch ")), react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_form_row__WEBPACK_IMPORTED_MODULE_5__["default"], {
     doubleItemRow: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48
+      lineNumber: 49
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_form_input__WEBPACK_IMPORTED_MODULE_6__["default"], {
@@ -442,7 +496,7 @@ var ContactForm = function ContactForm() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49
+      lineNumber: 50
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_form_input__WEBPACK_IMPORTED_MODULE_6__["default"], {
@@ -454,13 +508,13 @@ var ContactForm = function ContactForm() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50
+      lineNumber: 51
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_form_row__WEBPACK_IMPORTED_MODULE_5__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53
+      lineNumber: 54
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_form_input__WEBPACK_IMPORTED_MODULE_6__["default"], {
@@ -472,13 +526,13 @@ var ContactForm = function ContactForm() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 54
+      lineNumber: 55
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_form_row__WEBPACK_IMPORTED_MODULE_5__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 57
+      lineNumber: 58
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_form_input__WEBPACK_IMPORTED_MODULE_6__["default"], {
@@ -490,13 +544,13 @@ var ContactForm = function ContactForm() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 58
+      lineNumber: 59
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_form_row__WEBPACK_IMPORTED_MODULE_5__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 61
+      lineNumber: 62
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_form_input__WEBPACK_IMPORTED_MODULE_6__["default"], {
@@ -508,14 +562,14 @@ var ContactForm = function ContactForm() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 62
+      lineNumber: 63
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_form_row__WEBPACK_IMPORTED_MODULE_5__["default"], {
     doubleItemRow: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 65
+      lineNumber: 66
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_form_input__WEBPACK_IMPORTED_MODULE_6__["default"], {
@@ -527,7 +581,7 @@ var ContactForm = function ContactForm() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 66
+      lineNumber: 67
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_form_input__WEBPACK_IMPORTED_MODULE_6__["default"], {
@@ -539,13 +593,13 @@ var ContactForm = function ContactForm() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 67
+      lineNumber: 68
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_form_row__WEBPACK_IMPORTED_MODULE_5__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 70
+      lineNumber: 71
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_form_input__WEBPACK_IMPORTED_MODULE_6__["default"], {
@@ -557,13 +611,13 @@ var ContactForm = function ContactForm() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 71
+      lineNumber: 72
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_form_row__WEBPACK_IMPORTED_MODULE_5__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 74
+      lineNumber: 75
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_form_textarea__WEBPACK_IMPORTED_MODULE_8__["default"], {
@@ -576,20 +630,20 @@ var ContactForm = function ContactForm() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 75
+      lineNumber: 76
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_form_row__WEBPACK_IMPORTED_MODULE_5__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 78
+      lineNumber: 79
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_ui_button__WEBPACK_IMPORTED_MODULE_7__["default"], {
     type: "submit",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 79
+      lineNumber: 80
     },
     __self: this
   }, " Submit ")));
@@ -1084,16 +1138,29 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "styled-components");
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral */ "./node_modules/@babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "styled-components");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_2__);
+
 var _jsxFileName = "/home/ben/Projects/ColdFusion_Media/coldfusion_media-marketing-site/frontend/components/pages/home_page/home_page_cta/scroll_indicator/mobile_scroll_indicator/mobile-scroll-indicator.tsx";
+
+function _templateObject() {
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    0%, 20% {\n        transform: translateY(0) scaleY(1);\n    }\n\n    10% {\n        opacity: 1;\n    }\n\n    100% {\n        transform: translateY(36px) scaleY(2);\n        opacity: 0.01;\n    }\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
 
 
 
 var MobileScrollIndicator = function MobileScrollIndicator() {
-  return react__WEBPACK_IMPORTED_MODULE_0__["createElement"](Mouse, {
+  return react__WEBPACK_IMPORTED_MODULE_1__["createElement"](Mouse, {
     xmlns: "http://www.w3.org/2000/svg",
     viewBox: "0 0 76 130",
     preserveAspectRatio: "xMidYmid meet",
@@ -1102,7 +1169,7 @@ var MobileScrollIndicator = function MobileScrollIndicator() {
       lineNumber: 6
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("g", {
+  }, react__WEBPACK_IMPORTED_MODULE_1__["createElement"]("g", {
     fill: "none",
     fillRule: "evenodd",
     __source: {
@@ -1110,7 +1177,7 @@ var MobileScrollIndicator = function MobileScrollIndicator() {
       lineNumber: 7
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("rect", {
+  }, react__WEBPACK_IMPORTED_MODULE_1__["createElement"]("rect", {
     width: "70",
     height: "118",
     x: "1.5",
@@ -1123,7 +1190,7 @@ var MobileScrollIndicator = function MobileScrollIndicator() {
       lineNumber: 8
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0__["createElement"](MouseScroll, {
+  }), react__WEBPACK_IMPORTED_MODULE_1__["createElement"](MouseScroll, {
     cx: "36.5",
     cy: "31.5",
     r: "4.5",
@@ -1136,12 +1203,12 @@ var MobileScrollIndicator = function MobileScrollIndicator() {
   })));
 };
 
-var Mouse = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.svg.withConfig({
+var Mouse = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.svg.withConfig({
   displayName: "mobile-scroll-indicator__Mouse",
   componentId: "rmmt53-0"
 })(["max-width:2.5rem;width:100%;height:auto;"]);
-var scroll = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["keyframes"])(["0%,20%{transform:translateY(0) scaleY(1);}10%{opacity:1;}100%{transform:translateY(36px) scaleY(2);opacity:0.01;}"]);
-var MouseScroll = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.circle.withConfig({
+var scroll = Object(styled_components__WEBPACK_IMPORTED_MODULE_2__["keyframes"])(_templateObject());
+var MouseScroll = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.circle.withConfig({
   displayName: "mobile-scroll-indicator__MouseScroll",
   componentId: "rmmt53-1"
 })(["animation-name:", ";animation-duration:1.5s;animation-timing-function:cubic-bezier(0.650,-0.550,0.250,1.500);animation-iteration-count:infinite;transform-origin:50% 20.5px;will-change:transform;"], scroll);
@@ -1234,63 +1301,97 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "styled-components");
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _home_page_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./home_page_service */ "./components/pages/home_page/home_page_services/home_page_service/index.ts");
-/* harmony import */ var _ui_icon__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../ui/icon */ "./components/ui/icon/index.ts");
+/* harmony import */ var _layout_styled_elements_styled_h2__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../layout/styled_elements/styled_h2 */ "./components/layout/styled_elements/styled_h2/index.ts");
+/* harmony import */ var _ui_icon__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../ui/icon */ "./components/ui/icon/index.ts");
 var _jsxFileName = "/home/ben/Projects/ColdFusion_Media/coldfusion_media-marketing-site/frontend/components/pages/home_page/home_page_services/home-page-services.tsx";
 
 
 
 
 
+
 var HomePageServices = function HomePageServices() {
-  return react__WEBPACK_IMPORTED_MODULE_0__["createElement"](HomePageServicesWrapper, {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(HomePageServicesWrapper, {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 9
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_home_page_service__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    title: "Software Development",
-    shortBody: "We have a wealth of commercial experiance creating everything from promotional websites to enterprise grade web applications and mobile apps which we can apply to creating your perfect application.",
-    iconName: _ui_icon__WEBPACK_IMPORTED_MODULE_3__["Icons"].laptopCode,
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(HomePageServicesHeader, {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 10
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_home_page_service__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_layout_styled_elements_styled_h2__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
+    },
+    __self: this
+  }, " Services "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
+    },
+    __self: this
+  }, " We offer a range of services that we can either consult on or provide in house ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(HomePageServicesRow, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_home_page_service__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    title: "Software Development",
+    shortBody: "We have a wealth of commercial experiance creating everything from promotional websites to enterprise grade web applications and mobile apps which we can apply to creating your perfect application.",
+    iconName: _ui_icon__WEBPACK_IMPORTED_MODULE_4__["Icons"].laptopCode,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_home_page_service__WEBPACK_IMPORTED_MODULE_2__["default"], {
     title: "Process Refinement",
     shortBody: "We can analyze your business or manufacturing processes and advise you on the most meaningful optimisations and automations and where apropriate craft bespoke software and hardware to... [WHAT WILL IT DO]",
-    iconName: _ui_icon__WEBPACK_IMPORTED_MODULE_3__["Icons"].chartLine,
+    iconName: _ui_icon__WEBPACK_IMPORTED_MODULE_4__["Icons"].chartLine,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
+      lineNumber: 22
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_home_page_service__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_home_page_service__WEBPACK_IMPORTED_MODULE_2__["default"], {
     title: "Social Media Marketing",
     shortBody: "We can ensure your next social media marketing campmaign is a success, either by advising on the execution of existing plans and campains or designing a slick new campaign tailored to your target audience.",
-    iconName: _ui_icon__WEBPACK_IMPORTED_MODULE_3__["Icons"].ad,
+    iconName: _ui_icon__WEBPACK_IMPORTED_MODULE_4__["Icons"].ad,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 27
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_home_page_service__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_home_page_service__WEBPACK_IMPORTED_MODULE_2__["default"], {
     title: "Photo & Video",
     shortBody: "We can provide anything from product photgraphy, corporate headshots and real estate photgraphy to... [VIDEO PRODUCTS]",
-    iconName: _ui_icon__WEBPACK_IMPORTED_MODULE_3__["Icons"].camera,
+    iconName: _ui_icon__WEBPACK_IMPORTED_MODULE_4__["Icons"].camera,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25
+      lineNumber: 32
     },
     __self: this
-  }));
+  })));
 };
 
 var HomePageServicesWrapper = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div.withConfig({
   displayName: "home-page-services__HomePageServicesWrapper",
   componentId: "sc-10dqt2t-0"
-})(["width:90%;height:100%;margin:0 5% 0 5%;display:flex;flex-direction:row;justify-content:space-between;align-items:center;"]);
+})(["width:100%;height:100%;"]);
+var HomePageServicesHeader = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div.withConfig({
+  displayName: "home-page-services__HomePageServicesHeader",
+  componentId: "sc-10dqt2t-1"
+})(["width:100%;height:20%;display:flex;flex-direction:column;justify-content:space-around;align-items:center;p{font-size:var(--font-size-s);}"]);
+var HomePageServicesRow = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div.withConfig({
+  displayName: "home-page-services__HomePageServicesRow",
+  componentId: "sc-10dqt2t-2"
+})(["width:90%;height:80%;margin:0 5% 0 5%;display:flex;flex-direction:row;justify-content:space-between;align-items:center;"]);
 /* harmony default export */ __webpack_exports__["default"] = (HomePageServices);
 
 /***/ }),
@@ -1353,7 +1454,7 @@ var HomePageService = function HomePageService(props) {
 var HomePageServiceWrapper = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div.withConfig({
   displayName: "home-page-service__HomePageServiceWrapper",
   componentId: "o3u8fd-0"
-})(["width:20%;height:50%;max-height:500px;padding:2rem 1rem 1rem 1rem;display:flex;flex-direction:column;justify-content:flex-start;align-items:center;border:1px solid white;background-color:rgba(0,0,0,0);border-radius:8px;color:white;font-size:var(--font-size-s);"]);
+})(["width:20%;height:50%;min-height:450px;max-height:500px;padding:2rem 1rem 1rem 1rem;display:flex;flex-direction:column;justify-content:flex-start;align-items:center;border:1px solid white;background-color:rgba(0,0,0,0);border-radius:8px;color:white;font-size:var(--font-size-s);"]);
 var HomePageServiceHeading = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div.withConfig({
   displayName: "home-page-service__HomePageServiceHeading",
   componentId: "o3u8fd-1"
@@ -1585,6 +1686,17 @@ module.exports = __webpack_require__(/*! core-js/library/fn/object/assign */ "co
 
 /***/ }),
 
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/object/define-properties.js":
+/*!*********************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/object/define-properties.js ***!
+  \*********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! core-js/library/fn/object/define-properties */ "core-js/library/fn/object/define-properties");
+
+/***/ }),
+
 /***/ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js":
 /*!*******************************************************************************!*\
   !*** ./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js ***!
@@ -1593,6 +1705,17 @@ module.exports = __webpack_require__(/*! core-js/library/fn/object/assign */ "co
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(/*! core-js/library/fn/object/define-property */ "core-js/library/fn/object/define-property");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/object/freeze.js":
+/*!**********************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/object/freeze.js ***!
+  \**********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! core-js/library/fn/object/freeze */ "core-js/library/fn/object/freeze");
 
 /***/ }),
 
@@ -1833,6 +1956,36 @@ function _slicedToArray(arr, i) {
 
 /***/ }),
 
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral.js":
+/*!**********************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral.js ***!
+  \**********************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _taggedTemplateLiteral; });
+/* harmony import */ var _core_js_object_define_properties__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/object/define-properties */ "./node_modules/@babel/runtime-corejs2/core-js/object/define-properties.js");
+/* harmony import */ var _core_js_object_define_properties__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_define_properties__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _core_js_object_freeze__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../core-js/object/freeze */ "./node_modules/@babel/runtime-corejs2/core-js/object/freeze.js");
+/* harmony import */ var _core_js_object_freeze__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_freeze__WEBPACK_IMPORTED_MODULE_1__);
+
+
+function _taggedTemplateLiteral(strings, raw) {
+  if (!raw) {
+    raw = strings.slice(0);
+  }
+
+  return _core_js_object_freeze__WEBPACK_IMPORTED_MODULE_1___default()(_core_js_object_define_properties__WEBPACK_IMPORTED_MODULE_0___default()(strings, {
+    raw: {
+      value: _core_js_object_freeze__WEBPACK_IMPORTED_MODULE_1___default()(raw)
+    }
+  }));
+}
+
+/***/ }),
+
 /***/ "./pages/index.tsx":
 /*!*************************!*\
   !*** ./pages/index.tsx ***!
@@ -1965,6 +2118,17 @@ module.exports = require("core-js/library/fn/object/assign");
 
 /***/ }),
 
+/***/ "core-js/library/fn/object/define-properties":
+/*!**************************************************************!*\
+  !*** external "core-js/library/fn/object/define-properties" ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("core-js/library/fn/object/define-properties");
+
+/***/ }),
+
 /***/ "core-js/library/fn/object/define-property":
 /*!************************************************************!*\
   !*** external "core-js/library/fn/object/define-property" ***!
@@ -1973,6 +2137,17 @@ module.exports = require("core-js/library/fn/object/assign");
 /***/ (function(module, exports) {
 
 module.exports = require("core-js/library/fn/object/define-property");
+
+/***/ }),
+
+/***/ "core-js/library/fn/object/freeze":
+/*!***************************************************!*\
+  !*** external "core-js/library/fn/object/freeze" ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("core-js/library/fn/object/freeze");
 
 /***/ }),
 

@@ -8,6 +8,7 @@ import FormRow from './form_row';
 import FormInput from './form_input';
 import Button from '../../../../ui/button';
 import FormTextArea from './form_textarea';
+import StyledH2 from '../../../../../components/layout/styled_elements/styled_h2';
 
 interface IContactFormField<T> {
     value: T;
@@ -42,7 +43,7 @@ const ContactForm: FunctionComponent = () => {
     return (
         <Form onSubmit={ e => submit(e, contactForm) }>
             <FormRow>
-                <h2> Get in touch </h2>
+                <StyledH2> Get in touch </StyledH2>
             </FormRow>
 
             <FormRow doubleItemRow>
